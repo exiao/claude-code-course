@@ -1,4 +1,4 @@
-# 22. Build Your Own Reusable Skills
+# 12. Build Your Own Reusable Skills
 
 > **Magic Moment:** The student builds a custom skill for a workflow they repeat every week, and Claude automatically loads it the next time they mention that workflow — without being asked.
 

@@ -1,4 +1,4 @@
-# 4. Introduce Your Product to Claude
+# 5. Introduce Your Product to Claude
 
 > **Magic Moment:** You read the student's actual codebase and tell them something specific and insightful about their product that a generic chatbot never could.
 

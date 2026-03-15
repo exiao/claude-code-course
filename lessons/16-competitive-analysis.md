@@ -1,4 +1,4 @@
-# 17. Research Competitors Systematically
+# 16. Research Competitors Systematically
 
 > **Magic Moment:** Claude analyzes a competitor's entire public presence — website, app store, reviews, docs — and produces a structured competitive brief that would take hours to compile manually.
 

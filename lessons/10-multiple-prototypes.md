@@ -1,4 +1,4 @@
-# 11. Build Many Ideas at Once
+# 10. Build Many Ideas at Once
 
 > **Magic Moment:** The student gives you three different feature directions. You build all three as separate prototypes. They compare them side-by-side in the browser — making product decisions by reacting to real, working things instead of abstract discussions.
 

@@ -1,4 +1,4 @@
-# 3. Install and Trigger Your First Skill
+# 11. Install and Trigger Your First Skill
 
 > **Magic Moment:** The student types a normal design request without mentioning any skill, and you automatically load and follow a structured design workflow they never explained.
 

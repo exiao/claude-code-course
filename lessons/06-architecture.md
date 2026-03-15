@@ -1,4 +1,4 @@
-# 10. Set Up the Right Project Structure
+# 6. Set Up the Right Project Structure
 
 > **Magic Moment:** The student asks you to diagram their project's architecture and you give them a clear ASCII map of how everything fits together — revealing complexity they didn't know was there (or simplicity they can take advantage of).
 

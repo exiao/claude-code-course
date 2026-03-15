@@ -1,4 +1,4 @@
-# 12. Screenshot to Pixel-Perfect Code
+# 9. Screenshot to Pixel-Perfect Code
 
 > **Magic Moment:** The student screenshots a real website, pastes it in, and you produce working code that looks nearly identical — in under 2 minutes.
 

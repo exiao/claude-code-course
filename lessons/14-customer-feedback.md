@@ -1,4 +1,4 @@
-# 15. Turn Raw Reviews Into Product Strategy
+# 14. Turn Raw Reviews Into Product Strategy
 
 > **Magic Moment:** The student pastes messy, unstructured app reviews and watches Claude produce a prioritized product strategy — with themes, severity scores, and specific recommendations — in under 60 seconds.
 

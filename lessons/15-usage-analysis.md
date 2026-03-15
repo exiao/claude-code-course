@@ -1,4 +1,4 @@
-# 16. Data Analysis Without SQL
+# 15. Data Analysis Without SQL
 
 > **Magic Moment:** The student hands Claude a CSV export and watches it produce charts, trends, and actionable insights — no SQL, no Jupyter, no data science degree required.
 

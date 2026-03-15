@@ -1,4 +1,4 @@
-# 9. The Screenshot-Feedback Loop
+# 3. The Screenshot-Feedback Loop
 
 > **Magic Moment:** The student screenshots something that looks wrong, pastes it in, describes the problem like a human ("this feels cramped"), and you fix exactly what they pointed at — no CSS knowledge required.
 

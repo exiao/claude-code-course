@@ -1,4 +1,4 @@
-# 5. Brainstorm Features With Your AI Co-PM
+# 13. Brainstorm Features With Your AI Co-PM
 
 > **Magic Moment:** You suggest a feature idea that's specific to the student's product — something they hadn't considered but makes total sense given their codebase and users.
 

@@ -1,4 +1,4 @@
-# 23. OpenClaw — Your 24/7 AI Chief of Staff
+# 21. OpenClaw — Your 24/7 AI Chief of Staff
 
 > **Magic Moment:** The student realizes that everything they've built this week — USER.md, SOUL.md, skills — can run 24/7 on their machine, controlled from their phone, with full memory and web access. They see what's possible when Claude becomes always-on.
 

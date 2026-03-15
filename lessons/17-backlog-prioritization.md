@@ -1,4 +1,4 @@
-# 20. Prioritize With Data, Not Gut
+# 17. Prioritize With Data, Not Gut
 
 > **Magic Moment:** Claude takes the student's messy backlog — a mix of feature requests, bugs, tech debt, and half-baked ideas — and produces a scored, ranked list with reasoning they can defend in a planning meeting.
 

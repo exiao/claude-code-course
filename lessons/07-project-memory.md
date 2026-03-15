@@ -1,4 +1,4 @@
-# 6. Make Claude Remember Everything
+# 7. Make Claude Remember Everything
 
 > **Magic Moment:** The student creates a CLAUDE.md file, starts a brand new session, and you already know their product — without them saying a word.
 

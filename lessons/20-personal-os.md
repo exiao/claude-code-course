@@ -1,4 +1,4 @@
-# 21. Build Your Personal OS
+# 20. Build Your Personal OS
 
 > **Magic Moment:** The student starts a fresh Claude session after this lesson and Claude already knows who they are, how they communicate, and what they're building — without being told.
 

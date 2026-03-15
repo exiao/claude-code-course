@@ -1,4 +1,4 @@
-# 24. Deploy and Ship — Tests, CI/CD, and Going Live
+# 22. Deploy and Ship — Tests, CI/CD, and Going Live
 
 > **Magic Moment:** The student pushes code that automatically tests, gets AI-reviewed, and deploys to a live URL. They built it AND shipped it.
 

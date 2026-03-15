@@ -1,4 +1,4 @@
-# 2. How Agents Actually Work
+# 4. How Agents Actually Work
 
 > **Magic Moment:** The student watches your thinking process in real-time and realizes it's not magic — it's a loop of "think → use tools → think again" that they can steer.
 

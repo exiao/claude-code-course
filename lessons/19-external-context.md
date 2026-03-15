@@ -1,4 +1,4 @@
-# 14. MCP Servers, Docs, and External Context
+# 19. MCP Servers, Docs, and External Context
 
 > **Magic Moment:** The student connects an MCP server and you suddenly have capabilities you didn't have before — reading their Figma designs, querying live documentation, or pulling data from their tools — without leaving the terminal.
 

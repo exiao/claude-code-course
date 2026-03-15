@@ -1,4 +1,4 @@
-# 7. From Idea to Working App in One Prompt
+# 2. From Idea to Working App in One Prompt
 
 > **Magic Moment:** The student describes a feature in plain English, you build it live, and they open a fully interactive, visually polished prototype in their browser — in under two minutes.
 

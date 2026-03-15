@@ -11,41 +11,41 @@ Interactive lessons designed to be pasted into Claude Code. Each lesson guides y
 
 ## Lessons
 
-### Day 1 — Build Skills
+### Module 1 — It Builds Things
 - `01-setup.md` — Install Claude Code and get your first magic moment
-- `02-how-agents-work.md` — What's actually happening when Claude writes code
-- `03-first-skill.md` — Install and trigger your first skill
+- `02-first-prototype.md` — From idea to working app in one prompt
+- `03-iterate-fast.md` — The screenshot-feedback loop
 
-### Day 2 — Know Your Product
-- `04-introduce-your-product.md` — Give Claude full context on what you're building
-- `05-brainstorm-features.md` — Context-aware feature ideation (not generic)
-- `06-project-memory.md` — Make Claude remember everything
+### Module 2 — It Knows Your World
+- `04-how-agents-work.md` — What's actually happening when Claude writes code
+- `05-introduce-your-product.md` — Give Claude full context on what you're building
+- `06-architecture.md` — See your product's blueprint
 
-### Day 3 — Build Prototypes
-- `07-first-prototype.md` — From idea to working app in one prompt
-- `08-design-context.md` — Make every build match your visual style
-- `09-iterate-fast.md` — The screenshot-feedback loop
-- `10-architecture.md` — Set up the right project structure
-- `11-multiple-prototypes.md` — Build many ideas at once
+### Module 3 — It Remembers
+- `07-project-memory.md` — Make Claude remember everything
+- `08-design-system.md` — Give Claude your design system
 
-### Day 4 — Craft Beautiful Designs
-- `12-recreate-designs.md` — Screenshot to pixel-perfect code
-- `13-design-systems.md` — Component libraries and design tokens
-- `14-external-context.md` — MCP servers, docs, and Figma
+### Module 4 — It Builds More
+- `09-recreate-designs.md` — Screenshot to pixel-perfect code
+- `10-multiple-prototypes.md` — Build many ideas at once
 
-### Day 5 — Use Claude Code for Everything
-- `15-customer-feedback.md` — Turn raw reviews into product strategy
-- `16-usage-analysis.md` — Data analysis without SQL
-- `17-competitive-analysis.md` — Research competitors systematically
-- `18-release-notes.md` — Generate release notes from git history
-- `19-stakeholder-updates.md` — Weekly updates that write themselves
-- `20-backlog-prioritization.md` — Prioritize with data, not gut
+### Module 5 — It Has Workflows
+- `11-first-skill.md` — Install and trigger your first skill
+- `12-build-skills.md` — Create your own reusable skills
 
-### Day 6 — Build Your OS
-- `21-personal-os.md` — USER.md, SOUL.md, and AGENTS.md
-- `22-build-skills.md` — Create your own reusable skills
-- `23-openclaw.md` — Your 24/7 AI chief of staff
-- `24-deploy-and-ship.md` — Tests, CI/CD, and deployment
+### Module 6 — It Does Your PM Job
+- `13-brainstorm-features.md` — Context-aware feature ideation (not generic)
+- `14-customer-feedback.md` — Turn raw reviews into product strategy
+- `15-usage-analysis.md` — Data analysis without SQL
+- `16-competitive-analysis.md` — Research competitors systematically
+- `17-backlog-prioritization.md` — Prioritize with data, not gut
+- `18-comms.md` — Comms that write themselves (release notes + stakeholder updates)
+
+### Module 7 — It Scales
+- `19-external-context.md` — MCP servers, docs, and Figma
+- `20-personal-os.md` — USER.md, SOUL.md, and AGENTS.md
+- `21-openclaw.md` — Your 24/7 AI chief of staff
+- `22-deploy-and-ship.md` — Tests, CI/CD, and deployment
 
 ## Games
 
