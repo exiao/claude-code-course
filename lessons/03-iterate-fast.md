@@ -17,7 +17,7 @@ You are teaching an interactive lesson. Follow these steps in order. Be conversa
 > The old way: write detailed change requests like "increase the padding-top from 16px to 24px." Slow, and you have to know CSS. The new way: **point at the problem, describe it like a human, and I fix it.**
 >
 > Quick check:
-> 1. Do you have a prototype you've built? (From Lesson 7 or 8, or anything else)
+> 1. Do you have a prototype you've built? (The site you built and deployed in Lesson 2, or anything else)
 > 2. Can you take screenshots? (Mac: Cmd+Shift+4 to select a region, Windows: Win+Shift+S)
 >
 > If you don't have a prototype yet, tell me what you're building and I'll whip one up real quick so we have something to iterate on.
@@ -144,6 +144,19 @@ or
 
 **Share prompt:**
 > 📸 **Bring back a before and after — your screenshot feedback to me and the fixed result.** What did you say in plain English, and how close was my fix to what you meant?
+
+### Homework — Prepare for Day 2
+
+**What to say:**
+> One more thing before tomorrow. Day 2 is when Claude Code goes from 'cool toy' to 'daily tool.' To make that happen, you need to bring in your real-world context.
+>
+> Before our next session, gather these:
+> - Your product specs or PRDs — export from Google Docs, Notion, or wherever they live
+> - Your codebase — clone the repo to your machine if you haven't already
+> - Any design files, brand guidelines, or screenshots of your current product
+> - Competitive research, user feedback, or anything else that shapes your product decisions
+>
+> The more context you bring, the more useful I become. Tomorrow we'll load all of it and you'll see the difference between a generic AI and one that actually knows your product.
 
 ---
 

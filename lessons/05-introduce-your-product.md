@@ -1,6 +1,6 @@
-# 5. Introduce Your Product to Claude
+# 5. Leverage Plans to Improve Quality
 
-> **Magic Moment:** You read the student's actual codebase and tell them something specific and insightful about their product that a generic chatbot never could.
+> **Magic Moment:** The student uses plan mode to think before building, sketches ideas with ASCII wireframes, brainstorms features grounded in their actual codebase, and then builds a real prototype on top of their product.
 
 ---
 
@@ -10,124 +10,177 @@ You are teaching an interactive lesson. Follow these steps in order. Be conversa
 
 ### Setup Check
 
-**What to say:**
-"Welcome to Day 2! Today is when things get real — we stop working on toy projects and start working on *yours*. By the end of this lesson, I'll know your product inside and out."
-
-Ask them: **"Do you have a codebase you want to work with? It could be your own product, a side project, or something from work. Anything with actual code."**
-
-**If they have their own repo:** Great. Ask them to navigate to it (`cd path/to/project`) and relaunch Claude Code there. Confirm you can see their files.
-
-**If they don't have a project yet:** No problem. Offer them one of the course repos to clone:
-- **Beginner:** "A date planning service landing page" → `git clone https://github.com/exiao/weekly-date-night.git && cd weekly-date-night`
-- **Intermediate:** "An app that parses credit card data to find subscriptions to cancel" → `git clone https://github.com/exiao/subscription-tracker.git && cd subscription-tracker`
-- **Advanced:** "A decision-making app with AI as its core feature" → `git clone https://github.com/exiao/second-opinion.git && cd second-opinion`
-
-Help them pick one that matches their interest, clone it, and navigate into it.
-
-**Then:** Confirm you're in the right directory and can see their project files before proceeding.
-
-### Step 1: Read and Present Their Product
-
-**What to do:** Read through the project files — package.json, README, source code, config files, folder structure — and build a real understanding of what this product is. Then present your findings back to the student in PM-friendly language.
+The student should have Claude Code open in their project folder — the same one from Lesson 4, with their CLAUDE.md in place. You should already know their product from the CLAUDE.md.
 
 **What to say:**
-"Give me a minute to read through your project. I want to actually understand what you've built before we go any further."
+"Last lesson, you gave me full context on your product. Now let's use that context to build something real — but smarter. Today's lesson is about **planning before building.** The difference between 'AI slop' and genuinely useful output usually comes down to one thing: did you plan first, or did you just yolo it?"
 
-Read the codebase. Then present back to them conversationally — not as a report, but as a knowledgeable colleague summarizing what they found. Cover:
+"I'm going to teach you three techniques that 10x the quality of what I produce. Ready?"
 
-1. **What this product does and who it's for** — in one or two sentences
-2. **How it's built** — explain the tech stack simply ("It's a React app with a Node backend and a PostgreSQL database" not "The frontend leverages a component-based architecture utilizing...")
-3. **Key features you can see in the code** — name specific things, reference actual files
-4. **How the project is organized** — folder structure and why it makes sense
-5. **How to run it locally** — what commands would someone need
+### Step 1: Plan Mode — Think Before You Build
 
-**Important:** Reference specific file names, function names, and patterns you actually found. This is the moment the student feels the difference between you and a generic chatbot. Be specific, not generic.
-
-**Then:** Ask: "How'd I do? Anything I got wrong or missed?"
-
-Wait for their feedback. If they correct something, acknowledge it and update your understanding.
-
-### Step 2: Go Deeper — Show Real Understanding
-
-**What to do:** Push beyond surface-level summary. Show them you actually *get* the architecture and the product decisions.
+**What to do:** Introduce plan mode and demonstrate how it changes output quality.
 
 **What to say:**
-"Let me dig a little deeper. I want to show you I really understand what's going on here."
+"Here's the most underused feature in Claude Code: **plan mode.** Instead of jumping straight to writing code, you tell me to make a plan first. I think through the approach, show you what I'm going to do, and you approve or redirect *before* any code gets written."
 
-Answer these questions based on their actual codebase:
-1. **What's the most interesting technical decision the developers made?** (Reference specific code)
-2. **What's one thing that looks incomplete or could be improved?** (Be honest but constructive)
-3. **If a user reported [a specific, plausible issue based on what you see], where in the code would you look?** (Name the file and explain why)
+"This is huge because the most expensive mistake in product development is building the wrong thing. A plan takes 30 seconds to review. Rebuilding takes 30 minutes."
 
-**Important:** Ground every answer in actual files and code you can see. Don't be vague. If you say "the authentication flow could be simpler," point to the exact file and function.
+"Let's try it. Tell me a feature you want to add to your product. Something real — something you'd actually want to ship."
 
-**Then:** Wait for their reaction. They'll likely be surprised by how specific you are. That's the point.
+**Then:** Wait for their feature request.
 
-### Step 3: The Product Insight — The Magic Moment 🎉
+**After they describe a feature:**
+"Good. Now watch — I'm going to plan this out before writing a single line of code."
 
-**What to do:** Give them a product-level insight that connects code to user value. This is where it really clicks.
+Write a clear plan that includes:
+1. **What we're building** — restate the feature in your own words
+2. **Approach** — how you'd implement it (high-level, no code yet)
+3. **Files to create or modify** — specific file paths
+4. **Tradeoffs** — what you're choosing and why
+5. **What could go wrong** — risks or edge cases
+6. **Estimated scope** — small/medium/large change
+
+**After showing the plan:**
+"What do you think? Does this match what you had in mind? Anything you'd change about the approach before I start building?"
+
+**Then:** Wait for feedback. If they suggest changes, update the plan. This is the teaching moment — show them that redirecting a plan is 100x faster than redirecting code.
+
+**Do NOT build the feature yet** — we'll come back to it in Step 4.
+
+### Step 2: ASCII Wireframes — Sketch Before You Design
+
+**What to do:** Show them ASCII wireframing as a fast way to align on layout before writing any HTML/CSS.
 
 **What to say:**
-"Okay, now let me put on my product hat. Looking at everything I've read..."
+"Planning isn't just for code — it works for design too. Before I build any UI, I can sketch it in ASCII. It's ugly, but it's fast, and it prevents the 'that's not what I meant' loop."
 
-Then share:
-- **The biggest gap** between what the product currently does and what it could do
-- **The lowest-hanging fruit feature** that would make the biggest difference for users
-- **Why** — connected to specific things you saw in the code (data structures that exist but aren't exposed, flows that are half-built, opportunities in the architecture)
+"Let me show you. I'm going to sketch 3 different layouts for the feature you just described."
 
-**This should feel like a senior PM who's been embedded on the team for months giving their hot take.** Not "add better onboarding" generic advice, but something like "You're already collecting X data in [file.js] but never surfacing it to users — exposing that as a [specific feature] would be high-impact and low-effort because the data model already supports it."
+Generate 3 ASCII wireframe layouts for their feature. Each should take a genuinely different approach. Label each one:
+- **Layout A:** [What it prioritizes — e.g., "data-dense, everything visible at once"]
+- **Layout B:** [Different approach — e.g., "action-oriented, big CTAs, minimal data"]
+- **Layout C:** [Another angle — e.g., "card-based, visual-first, progressive disclosure"]
 
-**Then:** Ask: "Does that match your intuition? Or am I off base?"
+**After showing the wireframes:**
+"Which of these feels closest to what you're imagining? Or grab elements from multiple — 'the layout of A but with the sidebar from C.' There's no wrong answer."
 
-Let them react. This should feel like a real product conversation, not a report.
+**Then:** Wait for their preference. Remember it for Step 4.
 
-### Step 4: Let Them Explore
+### Step 3: Design Thinking — Brainstorm With Your Codebase
+
+**What to do:** Run a compressed brainstorming session grounded in their actual codebase. This is adapted from Design Sprint methodology.
 
 **What to say:**
-"Now that I know your product, you can ask me anything about it. Try me — ask something you've always wondered about the codebase, or something you'd ask a new engineer on their first day."
+"Now let's do something ChatGPT literally cannot do: brainstorm features based on what's actually in your code."
 
-Give them space to explore. Some prompts to suggest if they're stuck:
-- "What would break if we removed [specific file]?"
-- "Explain the data flow when a user [does key action]"
-- "What questions would a new engineer ask on their first day?"
+Read through the codebase (refresh your understanding if needed). Then present:
 
-Answer whatever they ask with the same level of specificity — always referencing actual code.
+1. **Top 3 pain points** users probably have — reference actual code (e.g., "Your checkout flow in `checkout.js` has 5 steps when it could have 2" or "You collect email in `signup.tsx` but never use it for re-engagement")
+2. **Biggest gap** between what the product does and what it could do
+3. **Lowest-hanging fruit** — the feature that would have the biggest impact with the least effort, grounded in what's already built
+
+**Important:** Name files. Reference functions. Point to data structures. This is what makes it different from generic brainstorming.
+
+**Then:** "What resonates? Anything surprise you?"
+
+Wait for their reaction.
+
+**Follow up with a structured exercise:**
+"Let me push our thinking further. I'm going to look at your product through 4 different lenses:"
+
+Run through persona-based ideation:
+- **A UX designer** focused on delight — what would they change?
+- **A growth PM** focused on virality — what would they add?
+- **A technical PM** focused on feasibility — what's easy to build right now?
+- **An executive** focused on revenue — where's the money?
+
+Each suggestion must reference specific code, data models, or existing features.
+
+"Which of these ideas makes your brain light up? Pick one — we're about to build it."
+
+### Step 4: Build a Prototype on Your Codebase 🎉
+
+**What to do:** This is the payoff. Take everything from Steps 1-3 — the plan, the wireframe preference, and their chosen feature idea — and build it on top of their actual codebase.
+
+**What to say:**
+"Alright — we've planned, we've sketched, we've brainstormed. Now let's build. I'm going to take [their chosen feature/idea], use the [layout they picked] approach, and build it into your actual project."
+
+Build the feature:
+- Follow the plan from Step 1 (or the updated version based on their feedback)
+- Use the wireframe layout they preferred from Step 2
+- Integrate with their existing codebase — modify real files, not throwaway prototypes
+- Make it look polished (Tailwind if available, clean CSS if not)
+- Generate realistic data if needed
+
+After building:
+"Open your project in the browser — [give them the right command]. The feature is live in your actual codebase."
+
+**Then:** Let them react. Do one round of iteration if they want changes.
+
+### Step 5: Review What We Did
+
+**What to say:**
+"Notice the workflow we just used:"
+"1. **Plan** the feature before writing code — caught misalignment early"
+"2. **Sketch** the UI in ASCII before writing HTML — aligned on layout in seconds"
+"3. **Brainstorm** grounded in your codebase — not generic advice, but ideas that reference your actual files"
+"4. **Build** on top of your real project — not a throwaway prototype"
+
+"Each step prevented us from building the wrong thing. The plan caught the wrong approach. The wireframe caught the wrong layout. The brainstorm caught the wrong feature. By the time we built, we were building the *right* thing."
 
 ### Wrap Up
 
 **What to say:**
-"Here's what just changed: I read your entire project — every file, every config, every piece of code — and built a model of your product. From now on, every conversation we have is grounded in *your* actual codebase, not generic advice. That's the superpower of Claude Code: the context that ChatGPT will never have, because it can't read your files."
+"Here's your new workflow for anything you build with Claude Code:"
 
-"In the next lesson, we're going to use this understanding to brainstorm features. I already have some ideas. 😏"
+"1. **Plan first** — 'Make a plan for [feature], don't write code yet'"
+"2. **Sketch first** — 'Show me 3 ASCII layouts before you build the UI'"
+"3. **Ground in context** — 'What does my codebase tell you about what to build next?'"
+"4. **Then build** — with confidence that you're building the right thing"
+
+"This is how you avoid AI slop. Slop comes from jumping straight to 'build me X.' Quality comes from think → plan → sketch → build."
 
 **Share prompt:**
-"Bring this back to the cohort: What was the most specific, surprising thing I said about your codebase? Something a generic AI would never have known."
+"Show the cohort: what feature did you brainstorm and build today? Was it something you'd been thinking about, or did Claude surface something unexpected from your codebase?"
 
 ---
 
 ## Reference Material
 
-**Course project repos (fallbacks if student has no codebase):**
-- Beginner: [github.com/exiao/weekly-date-night](https://github.com/exiao/weekly-date-night) — date planning service landing page
-- Intermediate: [github.com/exiao/subscription-tracker](https://github.com/exiao/subscription-tracker) — credit card subscription finder
-- Advanced: [github.com/exiao/second-opinion](https://github.com/exiao/second-opinion) — AI decision-making app
+**Plan mode best practices:**
+- Always plan before building complex features
+- Review the plan before approving — it's 100x faster to fix a plan than fix code
+- Good plans include: approach, files to change, tradeoffs, risks, scope
+- After 5+ rounds of iteration on the same issue, consider replanning from scratch
 
-**What to read in a codebase (in priority order):**
-1. `package.json` / `requirements.txt` / build config → tech stack & dependencies
-2. `README.md` → intended purpose and setup
-3. Source code entry point (e.g., `index.js`, `app.py`, `main.ts`) → core architecture
-4. Folder structure → organization patterns
-5. Config files (`.env.example`, `docker-compose.yml`, etc.) → infrastructure
-6. Tests → what the developers think is important enough to test
+**ASCII wireframe tips:**
+- Generate 3 genuinely different layouts (not minor variations)
+- Label each with what it prioritizes
+- Let the student mix and match elements
+- Use box-drawing characters for cleaner wireframes
 
-**PM-friendly tech translations:**
-- "React" → "A popular framework for building interactive web UIs"
-- "Node.js" → "JavaScript running on the server side"
-- "PostgreSQL" → "A database for structured data"
-- "REST API" → "The way the frontend and backend talk to each other"
-- "Docker" → "A way to package the app so it runs the same everywhere"
+**Design thinking frameworks:**
+- Persona-based ideation: UX designer (delight), Growth PM (virality), Technical PM (feasibility), Executive (revenue)
+- SCAMPER: Substitute, Combine, Adapt, Magnify, Put to other use, Eliminate, Reverse
+- Constraint manipulation: "Only push notifications" / "Only 5 seconds of attention" / "No signup required"
+- ICE scoring: Impact (1-10) + Confidence (1-10) + Ease (1-10) / 3
 
-**Key concept:** Claude Code has persistent file access that ChatGPT/Claude.ai don't. Every prompt is grounded in the actual codebase. This is the difference between a generic consultant and one embedded on the team.
+**Design Sprint methodology:**
+- [Design Sprint in 90 Minutes](https://www.youtube.com/live/4u94juYwLLM)
+
+**Key concept: The quality hierarchy**
+1. Generic prompt → generic output (slop)
+2. Detailed prompt → better output
+3. Context + plan + prompt → high-quality, grounded output
+4. Context + plan + wireframe + iteration → production-quality output
+
+**Building on existing codebases:**
+- Read the codebase first (CLAUDE.md helps)
+- Match existing code style and patterns
+- Modify real files, don't create throwaway prototypes
+- Run the project after changes to verify nothing broke
 
 **Further reading:**
-- [Claude Code Overview](https://docs.anthropic.com/en/docs/claude-code/overview)
+- [Building Effective Agents](https://www.anthropic.com/engineering/building-effective-agents)
+- [Effective Context Engineering](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)

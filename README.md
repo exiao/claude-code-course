@@ -11,18 +11,17 @@ Interactive lessons designed to be pasted into Claude Code. Each lesson guides y
 
 ## Lessons
 
-### Module 1 — It Builds Things
-- `01-setup.md` — Install Claude Code and get your first magic moment
-- `02-first-prototype.md` — From idea to working app in one prompt
+### Day 1 — Get Comfortable & Build
+- `01-setup.md` — Get comfortable with Claude Code (thinking partner, tools, iteration)
+- `02-first-prototype.md` — Create your first site and design (beginner/advanced + deploy to Surge.sh)
 - `03-iterate-fast.md` — The screenshot-feedback loop
 
-### Module 2 — It Knows Your World
-- `04-how-agents-work.md` — What's actually happening when Claude writes code
-- `05-introduce-your-product.md` — Give Claude full context on what you're building
+### Day 2 — Context & Planning
+- `04-how-agents-work.md` — Bring in your context (codebase, specs, CLAUDE.md, context engineering)
+- `05-introduce-your-product.md` — Leverage plans to improve quality (plan mode, ASCII wireframes, design thinking)
 - `06-architecture.md` — See your product's blueprint
 
-### Module 3 — It Remembers
-- `07-project-memory.md` — Make Claude remember everything
+### Day 3 — Design & Polish
 - `08-design-system.md` — Give Claude your design system
 
 ### Module 4 — It Builds More

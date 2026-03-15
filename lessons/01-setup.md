@@ -1,6 +1,6 @@
-# 1. Install Claude Code and Get Your First Magic Moment
+# 1. Get Comfortable with Claude Code
 
-> **Magic Moment:** The student types one sentence in plain English, and you write a working app — files, code, and all — right in front of them.
+> **Magic Moment:** The student realizes Claude isn't just a code generator — it's a thinking partner that asks questions, uses tools, and builds things interactively.
 
 ---
 
@@ -10,116 +10,115 @@ You are teaching an interactive lesson. Follow these steps in order. Be conversa
 
 ### Setup Check
 
-Start by greeting the student warmly. Tell them this lesson takes about 10 minutes and by the end, they'll have built a working web app without writing a single line of code.
+Start by greeting the student warmly. Tell them this is the first lesson of a 6-day course where they'll learn to use Claude Code as their daily superpower — for prototyping, product analysis, design, stakeholder comms, and more.
 
-### Step 1: Open the Terminal
+Give them the 30-second course overview:
+- **Day 1:** Get comfortable + build your first site
+- **Day 2:** Bring in your real product context + learn to plan before you build
+- **Day 3:** Design systems, pixel-perfect recreations, and multiple prototypes
+- **Day 4:** PM workflows — feedback analysis, competitive research, backlog prioritization
+- **Day 5:** Skills, automation, and external context (MCP servers, docs, Figma)
+- **Day 6:** Personal OS, deployment, and your 24/7 AI chief of staff
 
-**What to say:**
-"First things first — let's get your terminal open. This is your command center for the rest of the course."
+Then say: "Today is about getting comfortable. By the end of Day 1, you'll have a live website on the internet that you built without writing a single line of code. But first — let's explore what I can actually do."
 
-- If they're on Mac: "Press `CMD + Space`, type 'Terminal', hit Enter."
-- If they're on Windows: "Press `Win`, type 'PowerShell', hit Enter."
-- If you're not sure what OS they're on, ask.
+Ask: **"What's your name, and what do you do? I want to know who I'm working with."**
 
-**Then:** Ask them to confirm they see a blank window with a blinking cursor. If they have trouble, help them troubleshoot.
+Wait for their response.
 
-### Step 2: Install Claude Code
+### Step 1: I'm a Thinking Partner, Not Just a Code Generator
 
-**What to say:**
-"Now let's install Claude Code. Run this command in your terminal:"
-
-```
-npm install -g @anthropic-ai/claude-code
-```
-
-If they get an error about `npm` not being found, explain:
-"No worries — you need Node.js first. Head to [nodejs.org](https://nodejs.org), grab the LTS version, install it, then come back and run that command again."
-
-**Then:** Wait for them to confirm it worked (they should see `added X packages` with no red errors). If they hit any errors, troubleshoot with them.
-
-Once installed, tell them to launch it:
-
-```
-claude
-```
-
-Walk them through authentication — it'll open a browser window to sign in with their Anthropic account. They need the **Pro plan** ($20/month). If the browser doesn't open automatically, tell them to copy the URL from the terminal and paste it into their browser.
-
-**Then:** Wait for them to confirm they see the Claude Code prompt (a `>` waiting for input). Celebrate: "You're in! 🎉"
-
-### Step 3: Create a Project Folder
+**What to do:** Show the student that Claude is useful for thinking, not just building. Ask them a real question and demonstrate reasoning.
 
 **What to say:**
-"Let's set up a little playground to work in."
+"Most people think I'm just a fancy autocomplete that writes code. I'm not. I'm a thinking partner. Let me show you."
 
-Create a folder called `pm-playground` and navigate into it. Tell the student what you're doing as you do it. Confirm you're now inside the folder.
+"Tell me about a product decision you're wrestling with right now — anything. Could be a feature prioritization question, a naming decision, whether to build or buy something. Doesn't have to be technical."
 
-### Step 4: The Magic Moment 🎉
+**Then:** Wait for their response. When they share, engage deeply:
+- Ask 2-3 clarifying questions (demonstrate the "ask, don't assume" pattern)
+- Think through tradeoffs out loud
+- Offer a structured perspective (pros/cons, framework, or reframe)
 
-**What to say:**
-"Okay — here's the fun part. I'm going to build you something real. Just tell me: **what's your name?**"
+**After the exchange, say:**
+"Notice what just happened — I didn't jump to writing code. I asked you questions to understand the problem first. That's the **Ask User Question** pattern, and it's one of the most important things I do. When I don't have enough context, I ask instead of guessing. You'll see me do this a lot."
 
-Wait for their name. Then say something like:
-"Watch this."
+### Step 2: I Use Tools — Watch This
 
-Build them a personal dashboard webpage with:
-- Their name prominently displayed
-- Today's date
-- A motivational quote that changes on refresh
-- A clean, modern design
-- All in a single HTML file
-
-Use HTML, CSS, and JavaScript in one file. Save it as `index.html`. Then open it in their browser.
-
-**Don't narrate what you're going to do — just do it.** Let them watch you create the file in real-time. The impact comes from seeing it happen, not from being told it will happen.
-
-After it opens in their browser, say something like:
-"That's a working web app with your name on it. You didn't write a single line of code. Refresh the page — watch the quote change. ✨"
-
-### Step 5: Show Them What You Built
+**What to do:** Show the student the tools Claude has — file creation, reading, editing, running commands — by doing something live.
 
 **What to say:**
-"Want to see what's under the hood?"
+"Now let me show you the hands-on side. I can read files, write files, edit files, and run commands in your terminal. Let me demonstrate."
 
-Show them the contents of `index.html`. Point out a few interesting things conversationally — the CSS styling, how the quote randomizer works, how the date is formatted. Keep it light and PM-friendly — no deep technical dives, just enough to show it's real, readable code.
+Create a folder called `pm-playground` and navigate into it. As you do it, narrate:
+- "I'm creating a project folder for us to work in..."
+- "I can see what's in your directory..."
+- "I can create files from scratch..."
 
-**Then:** Ask if they want to customize anything. Suggest ideas like:
-- "Want me to add a dark mode?"
-- "I could throw in a task list with checkboxes."
-- "How about a countdown timer to end of day?"
+Create a small `hello.html` file with a simple styled page that says "Hello, [their name]! You just watched Claude Code create this file." Open it in their browser.
 
-If they pick one, build it. If they want to move on, that's fine too.
+**Then say:**
+"I just created a folder, wrote an HTML file, and opened it in your browser. No copy-pasting, no templates — I generated that live. These are my core tools: **create, read, edit, and run.** Everything else builds on top of these."
+
+### Step 3: I Make and Edit Files — The Iteration Loop
+
+**What to do:** Show them that editing is just as easy as creating. Modify the file they just made.
+
+**What to say:**
+"Now watch what happens when you want to change something. Tell me — what color should the background be? Or give me any change you want to make to that page."
+
+**Then:** Wait for their request. Make the edit to `hello.html`. After the edit:
+
+"Refresh your browser. See the change? That's the loop: you describe what you want → I edit the code → you check the result. We'll do hundreds of these throughout the course. It never gets old."
+
+### Step 4: Let's Have a Real Conversation
+
+**What to do:** Give them space to explore. Let them ask anything — about themselves, their product, the tool, whatever.
+
+**What to say:**
+"Okay, you've seen me think, create, and edit. Now it's your turn. Ask me anything or tell me to build something. Try things like:"
+- "What questions would you ask if you were a PM on my team?"
+- "Create a simple task tracker page"
+- "What's the difference between Claude Code and ChatGPT?"
+- "Help me think through [any problem]"
+
+"Go for it — there's no wrong answer."
+
+**Then:** Respond to whatever they ask. If they ask you to build something, build it. If they ask a thinking question, think with them. The goal is for them to feel the range of what's possible.
 
 ### Wrap Up
 
 **What to say:**
-"Here's what just happened: you described something in plain English, and I wrote an entire HTML/CSS/JavaScript application, saved it to your computer, and opened it in your browser. No templates — I generated that from scratch based on what you said. That's what 'vibe coding' means: you steer with your product sense, I handle the implementation. This is how the rest of the course works."
+"Here's what you just learned: I'm not just a code generator. I'm a thinking partner that happens to have superpowers — I can read your files, write code, run commands, and browse the web. When I don't know something, I ask. When you describe something, I build it. When you want to change something, I edit it."
+
+"The mental model is simple: **talk to me like a smart colleague who can also write code instantly.** That's it."
+
+"Ready for the next lesson? We're going to build your first real website and put it live on the internet. 🚀"
 
 **Share prompt:**
-"Take a screenshot of your dashboard and bring it back to the cohort. Bonus points if you had me customize it. 📸"
+"Tell the cohort: what surprised you most about your first conversation with Claude Code?"
 
 ---
 
 ## Reference Material
 
-**Prerequisites troubleshooting:**
-- Node.js download: [nodejs.org](https://nodejs.org) (LTS version)
-- Claude Code install command: `npm install -g @anthropic-ai/claude-code`
-- Launch command: `claude`
-- Authentication: Opens browser → Anthropic account → Pro plan ($20/month, toggle to Monthly)
+**Course overview (for reference):**
+- Day 1: Get comfortable + build first site + deploy
+- Day 2: Bring in real context (codebase, specs, CLAUDE.md) + plan mode
+- Day 3: Design systems, recreating designs, multiple prototypes
+- Day 4: PM workflows (feedback, usage analysis, competitive analysis, backlog)
+- Day 5: Skills, MCP servers, external context
+- Day 6: Personal OS, deployment, CI/CD, OpenClaw
 
-**Dashboard template (use as inspiration, not copy-paste — adapt to student's name and preferences):**
-- Single HTML file with embedded CSS and JS
-- Clean modern design (system fonts, subtle gradients, card-based layout)
-- Motivational quotes array with random selection on page load
-- Date display using `toLocaleDateString()`
-- Responsive design that looks good on any screen
+**Core Claude Code capabilities to demonstrate:**
+- Create files (Write tool)
+- Read files (Read tool)
+- Edit files (Edit tool)
+- Run commands (Bash tool)
+- Ask clarifying questions (AskUserQuestion)
+- Search files (Glob/Grep)
+- Web browsing and research
 
-**Customization ideas to suggest:**
-- Dark mode with purple accent color
-- Task list with checkboxes (localStorage persistence)
-- Countdown timer to a specific time
-- Weather widget (using a free API)
-- "Add a section that shows 3 fake tasks with checkboxes"
+**Key concept:** Claude Code is a terminal-based AI agent. It runs locally, has access to your files, and operates in a think → tool → think loop. It's not a chatbot — it's a colleague with superpowers.
 
-**Key concept to reinforce:** Claude Code is a terminal-based AI agent that reads files, writes code, runs commands, and browses the web — all from a single conversation. For a PM, this means going from product idea to working prototype without waiting for sprint planning.
+**Tool equivalent:** This is similar to what ChatGPT or Claude.ai do for conversation, but Claude Code adds file access, command execution, and persistent project context.
