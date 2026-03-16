@@ -29,37 +29,59 @@ Confirm they have a browser open and know how to take screenshots:
 
 ### Step 1: Pick a Design Improvement
 
-Present the menu of UX improvements. Each one links to a real article from the Nielsen Norman Group (the gold standard of UX research):
+Look at the student's current site and pick the 3 most impactful improvements from the list below. Present ONLY those 3, with a small ASCII sketch showing what each would look like on THEIR site. Keep it short.
 
-> "Professional designers use specific techniques to make apps feel polished and intuitive. Pick one of these to apply to your site — or pick a few if you're feeling ambitious:"
->
-> **1) Glassmorphism** — Frosted glass effects that add depth and elegance
-> *Read more: [nngroup.com/articles/glassmorphism](https://www.nngroup.com/articles/glassmorphism/)*
->
-> **2) Copy a component** — Browse a gallery of real UI components and add one to your site
-> *Browse: [component.gallery/components](https://component.gallery/components/)*
->
-> **3) Micro-interactions** — Tiny animations that make your site feel alive (hover effects, button feedback, smooth transitions)
-> *Read more: [nngroup.com/articles/microinteractions](https://www.nngroup.com/articles/microinteractions/)*
->
-> **4) Progressive disclosure** — Show only what's needed, reveal more on demand (expandable sections, "read more" buttons)
-> *Read more: [nngroup.com/articles/progressive-disclosure](https://www.nngroup.com/articles/progressive-disclosure/)*
->
-> **5) Better empty states** — Design what users see before there's any content (placeholder messages, onboarding hints)
-> *Read more: [nngroup.com/articles/empty-state-interface-design](https://www.nngroup.com/articles/empty-state-interface-design/)*
->
-> **6) Confirmation dialogs** — Add "are you sure?" moments for important actions
-> *Read more: [nngroup.com/articles/confirmation-dialog](https://www.nngroup.com/articles/confirmation-dialog/)*
->
-> **7) Keyboard shortcuts** — Make your site usable without a mouse
-> *Read more: [nngroup.com/articles/keyboard-accessibility](https://www.nngroup.com/articles/keyboard-accessibility/)*
->
-> **8) Skeleton loading screens** — Show elegant placeholder shapes while content loads (like LinkedIn or Facebook)
-> *Read more: [nngroup.com/articles/skeleton-screens](https://www.nngroup.com/articles/skeleton-screens/)*
->
-> "Pick a number (or a few!). If you want to read the article first, go for it — you can even copy-paste the article text here and I'll use it as a guide."
+> "Let me suggest 3 improvements that would make the biggest difference for your site. Here's what each would look like:"
 
-Wait for their choice.
+Then show 3 options, each with a small ASCII visual. For example:
+
+> **A) Glassmorphism** — frosted glass effect
+> ```
+> ┌──────────────────────┐
+> │ ░░░ blurred bg ░░░░░ │
+> │ ┌──────────────────┐ │
+> │ │  Your content     │ │
+> │ │  floats on glass  │ │
+> │ └──────────────────┘ │
+> └──────────────────────┘
+> ```
+> *[Learn more](https://www.nngroup.com/articles/glassmorphism/)*
+>
+> **B) Micro-interactions** — hover effects & smooth transitions
+> ```
+> [ Button ]  →  hover  →  [ ✨ Button ✨ ]
+>  static        ───►        animated
+> ```
+> *[Learn more](https://www.nngroup.com/articles/microinteractions/)*
+>
+> **C) Skeleton loading** — placeholder shapes while content loads
+> ```
+> ┌──────────────────────┐
+> │ ████████░░░░░░░░░░░░ │
+> │ ██████████████░░░░░░ │
+> │ █████░░░░░░░░░░░░░░░ │
+> └──────────────────────┘
+>   ↓ content appears ↓
+> ┌──────────────────────┐
+> │ Welcome back, Sarah  │
+> │ Your dashboard is... │
+> │ 3 new updates        │
+> └──────────────────────┘
+> ```
+> *[Learn more](https://www.nngroup.com/articles/skeleton-screens/)*
+
+**IMPORTANT:** The examples above are just samples. Choose the 3 that make the most sense for the student's actual site, and draw the ASCII sketches to reflect THEIR content and layout. The sketches should be small (3-6 lines each).
+
+Other techniques you can pick from:
+- **Progressive disclosure** — expandable sections, "read more" buttons. *[Article](https://www.nngroup.com/articles/progressive-disclosure/)*
+- **Copy a component** — browse [component.gallery](https://component.gallery/components/) and recreate one.
+- **Better empty states** — placeholder messages and onboarding hints. *[Article](https://www.nngroup.com/articles/empty-state-interface-design/)*
+- **Confirmation dialogs** — "are you sure?" moments. *[Article](https://www.nngroup.com/articles/confirmation-dialog/)*
+- **Keyboard shortcuts** — navigate without a mouse. *[Article](https://www.nngroup.com/articles/keyboard-accessibility/)*
+
+> "Pick A, B, or C — or tell me what you'd like instead."
+
+**STOP. Wait for their choice.**
 
 ---
 
