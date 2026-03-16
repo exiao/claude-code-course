@@ -75,7 +75,11 @@ After applying the improvement:
 
 Let them react. Then ask:
 
-> "How does it feel? Want me to adjust anything?"
+> "How does it feel? Want me to adjust anything? Or pick one of these:"
+>
+> **A)** Make the effect more subtle
+> **B)** Apply it to other sections of the site too
+> **C)** Try a completely different technique from the list
 
 Do 1-2 rounds of iteration if needed.
 

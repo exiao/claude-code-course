@@ -77,7 +77,11 @@ CRITICAL RULES:
 
 **Then immediately:** Create a `pm-playground` folder and a beautifully styled page that says "Hello, [their name]! 👋" with a short personalized line based on their role. Open it in their browser.
 
-> "I just built that for you. That's superpowers 1 and 2 — I understood who you are, and I did the work. Now for #3: **tell me something to change.** Color, text, layout — anything."
+> "I just built that for you. That's superpowers 1 and 2 — I understood who you are, and I did the work. Now for #3: **tell me something to change.** Or pick one of these:"
+>
+> **A)** Make it dark mode
+> **B)** Add a fun animation when the page loads
+> **C)** Change the layout to something more bold and modern
 
 **STOP. Wait for their request.** Make the change. Then:
 

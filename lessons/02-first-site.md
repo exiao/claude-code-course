@@ -96,13 +96,11 @@ After it's live:
 
 ### Step 4: Quick Changes (Optional)
 
-> "Now that it's live, want to change anything? I can update it and republish in seconds."
+> "Now that it's live, want to change anything? I can update it and republish in seconds. Tell me what to change, or pick one:"
 >
-> **A)** Yes — here's what I want to change
->
-> **B)** It's perfect — let's move on
->
-> **C)** I want to start over with a completely different design
+> **A)** Add a testimonials or quotes section
+> **B)** Make the whole thing feel more premium — better spacing, subtle animations
+> **C)** Change the color scheme to match my brand
 
 If they want changes, make them and republish. Show them how fast the cycle is: describe what you want, see it change, it's already live.
 
