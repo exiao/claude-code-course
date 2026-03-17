@@ -27,29 +27,72 @@ CRITICAL RULES:
 
 ### Step 1: What This Is
 
-> "Nice to meet you, [name]! Let me quickly explain what you're looking at."
->
-> "This text window is called Claude Code. You type messages to me, and I respond — but unlike a chatbot, **I can actually do things on your computer.** Create files, build websites, analyze documents."
->
+> "Nice to meet you, [name]! Let me explain what you're looking at."
+
+Show this visual:
+
+```
+┌───────────────────────────────────┐
+│  This is Claude Code              │
+│                                   │
+│  You type messages, I respond.    │
+│  But unlike a chatbot — I can     │
+│  DO things on your computer.      │
+│                                   │
+│  ┌─────────────────────────────┐  │
+│  │ >  You type here            │  │
+│  └─────────────────────────────┘  │
+└───────────────────────────────────┘
+```
+
 > "Think of me as a coworker who lives in this text window. Ready to see how it works?"
 
 **STOP. Wait for their response.**
 
 ---
 
-### Step 2: The Permission System
+### Step 2: How We Talk
 
-> "One thing you'll notice — sometimes I'll ask permission before doing something. You'll see buttons like **Allow**, **Deny**, or **Always Allow**. Just press **Y** for yes. That's it."
->
-> "Nothing I do is permanent — we can always undo. Don't worry about pressing the wrong thing."
->
-> "Make sense?"
+Show this visual:
+
+```
+YOU                        CLAUDE
+────                       ──────
+"Build me a website" ───►  🤔 Thinks
+                           📁 Creates files
+                     ◄───  "Done! Here it is"
+
+"Change the color"   ───►  ✏️  Edits it
+                     ◄───  "Updated! Refresh"
+```
+
+> "You talk in plain English. I do the work behind the scenes. That's it."
 
 **STOP. Wait for their response.**
 
 ---
 
-### Step 3: Shortcuts Worth Knowing
+### Step 3: The Permission System
+
+Show this visual:
+
+```
+┌───────────────────────────────────┐
+│ Claude wants to: Create a file    │
+│                                   │
+│ [Allow]  [Deny]  [Always Allow]   │
+│                                   │
+│ Tip: Press Y for yes, N for no    │
+└───────────────────────────────────┘
+```
+
+> "Sometimes I'll ask permission first. Just press **Y**. Nothing is permanent — we can always undo."
+
+**STOP. Wait for their response.**
+
+---
+
+### Step 4: Shortcuts Worth Knowing
 
 > "A few shortcuts you'll use:"
 >
@@ -65,17 +108,30 @@ CRITICAL RULES:
 
 ---
 
-### Step 4: Superpower Demo
+### Step 5: Three Superpowers
 
-> "Let me show you what makes this different from ChatGPT. I have three superpowers:"
->
-> **1. I can understand your product** — I read your files so my answers are specific to you
-> **2. I can do work for you** — I build real things, not just suggestions
-> **3. I can change things instantly** — describe what's wrong, I fix it
->
+> "Here's what makes this different from ChatGPT:"
+
+Show this visual:
+
+```
+┌───────────────────────────────────┐
+│ THREE SUPERPOWERS                 │
+│                                   │
+│ 1. I understand your product      │
+│    (I read your files)            │
+│                                   │
+│ 2. I do work for you              │
+│    (I build real things)          │
+│                                   │
+│ 3. I change things instantly      │
+│    (describe it → done)           │
+└───────────────────────────────────┘
+```
+
 > "Watch this."
 
-**Then immediately:** Create a `pm-playground` folder and a beautifully styled page that says "Hello, [their name]! 👋" with a short personalized line based on their role. Save it as `hello.html`. Open it in their browser.
+**Demo:** Create a `pm-playground` folder and a beautifully styled page that says "Hello, [their name]! 👋" with a short personalized line based on their role. Save it as `hello.html`. Open it in their browser.
 
 > "I just built that for you. That's superpowers 1 and 2 — I understood who you are, and I did the work. Now for #3: **tell me something to change.** Or pick one of these:"
 >
