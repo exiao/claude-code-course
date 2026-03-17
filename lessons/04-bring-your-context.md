@@ -59,19 +59,33 @@ Ask if they have any specs, product requirement documents, or design docs they w
 
 Read whatever they provide and summarize what you learned. Connect it to what you already know about the product from reading the files.
 
-### Step 4: Context Window — My Memory Has Limits
+### Step 4: How My Memory Actually Works
 
 Explain this simply:
 
-> "I have a memory limit for each conversation — think of it like a whiteboard that can only hold so much. When we have a really long conversation, older stuff falls off the edge. Here's how to work with that:"
+> "Before we build your memory file, let me explain how my memory works. I have three layers:"
 >
-> - **Start fresh conversations for new topics.** Each new chat gives me a clean whiteboard.
-> - **Keep important info in files I can re-read** — not just in chat messages that scroll away.
-> - **If I start forgetting things,** just remind me to re-read the key files.
+> **Short-term** — this conversation. Everything we've said. Gone the moment you close the session.
+>
+> **Medium-term** — your project files. I can read them anytime, but I have to go looking for them.
+>
+> **Long-term** — my general knowledge from training. I know about the world, but nothing about YOUR product.
+>
+> "The gap is obvious: I have no medium-term memory of your product between sessions. That's what we're about to fix."
+>
+> "One more thing — each conversation has a size limit. Think of it like a whiteboard. When we talk for a long time, older stuff falls off. So:"
+>
+> - **Start fresh conversations for new topics**
+> - **Keep important info in files** — not just in chat
+> - **If I start forgetting things,** remind me to re-read the key files
 
 ### Step 5: Create Your Memory File
 
-> "Here's the problem: everything I just learned about your product? I forget it all when you close this session. Let's fix that permanently."
+> "Here's the problem: everything I just learned about your product? I forget it all when you close this session. It's like *50 First Dates* — every morning I wake up with no memory of yesterday. Let's fix that permanently."
+>
+> "We're going to create a file called **CLAUDE.md** (some teams call it AGENTS.md — same idea). Think of it as a README for me: a briefing doc I read automatically at the start of every session."
+>
+> "**Important: less is more.** The less you put in this file, but the more specific and correct it is, the better I perform. Don't dump everything — just the most important context. You can always put deeper details in other files and reference them."
 
 Create a CLAUDE.md file that captures everything important about their product. Use plain section headers like:
 - **What This Product Does**
@@ -95,6 +109,20 @@ Have them quit and restart the text window where they talk to Claude.
 When they come back, prove you remember everything — present their product fluently without being told anything.
 
 > "No re-explaining. No 'here's what I'm working on' preamble. I just... know. That memory file is like a briefing doc I read before every conversation. You'll never have to re-introduce your product again."
+
+### Step 7: Prompts to Reuse on Your Own
+
+> "Now that you've seen how this works, here are three prompts you can use on ANY project to set up context from scratch. Save these for later:"
+>
+> **Prompt 1:** "Give me an overview of this project — what it does, how it's organized, key features, and how to run it."
+>
+> **Prompt 2:** "Take everything you just learned and create a CLAUDE.md file with organized sections."
+>
+> **Prompt 3:** "Add a HOW TO CODE section to CLAUDE.md with these principles: keep it simple, readability over cleverness, build incrementally, use standard libraries, no premature optimization."
+>
+> "Those three prompts work on any project. You'll use them again and again."
+
+---
 
 ### Wrap Up
 
