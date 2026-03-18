@@ -26,17 +26,15 @@ The student should be in their project with their memory file (CLAUDE.md) from L
 > **B)** A feature that helps your users do something better
 > **C)** Something you've been putting off because it seemed complicated
 
-Once they pick, write a plan — NOT the actual thing. The plan should cover:
+Once they pick, write a plan and save it to `plan.md` in their project folder. The plan should cover:
 - **What we're building** — in one sentence
 - **Our approach** — the steps we'll take, in plain language
 - **What could go wrong** — potential issues to watch for
 - **How big this is** — is this a 5-minute thing or a 30-minute thing?
 
-Ask them to review the plan:
+> "I've saved the plan to `plan.md` so we can reference it later. Take a look — does this match what you had in mind? Now is the cheap moment to change direction. Redirecting a plan takes seconds. Rebuilding something that's already built takes forever."
 
-> "Does this match what you had in mind? Now is the cheap moment to change direction. Redirecting a plan takes seconds. Rebuilding something that's already built takes forever."
-
-Do NOT build anything yet. Let them sit with the plan and adjust it.
+Update `plan.md` with any changes they request. Do NOT build anything yet.
 
 ### Step 2: Sketch Before You Design (Text Wireframes)
 
