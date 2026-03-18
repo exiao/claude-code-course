@@ -42,6 +42,12 @@ Read their project files. Then answer the same question with specific, grounded 
 
 **STOP. Wait for their reaction.**
 
+After the student reacts, acknowledge briefly, then redirect:
+
+> "Hold that thought. Before we go any deeper, let's make sure I never forget what I just learned."
+
+**GUARDRAIL: If the student asks follow-up questions about their product or wants to explore further, acknowledge briefly but redirect to creating CLAUDE.md first. Do not get pulled into a product discussion yet. The memory file comes first.**
+
 ---
 
 ### Step 3: Create Your CLAUDE.md

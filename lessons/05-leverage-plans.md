@@ -57,7 +57,7 @@ If they want changes, update the sketch and show it again. Repeat until they're 
 
 **STOP. Wait for their response.** Use their answer to shape the plan. Don't assume there's a codebase — if they want a doc or spec, the plan should be about writing, not coding.
 
-Write an implementation plan and save it to `plan.md`:
+Present an implementation plan covering:
 - **What we're building** — one sentence
 - **Approach** — steps in plain language
 - **What could go wrong** — risks
@@ -65,7 +65,9 @@ Write an implementation plan and save it to `plan.md`:
 
 > "Here's the plan. Does this match what you had in mind? Now is the cheap moment to change direction."
 
-**STOP. Wait for their feedback.** Update `plan.md` if needed.
+**STOP. Wait for their feedback.** Adjust the plan based on their input.
+
+**NOTE:** You're in Plan mode — you can think and discuss but can't write files yet. The plan gets saved in the next step.
 
 ---
 
@@ -75,7 +77,11 @@ Write an implementation plan and save it to `plan.md`:
 
 **STOP. Wait for them to switch.**
 
-Build the feature following the plan and their chosen sketch. Open in browser.
+First, save the approved plan to `plan.md`:
+
+> "Let me save that plan first so we can track it."
+
+Write the plan to `plan.md` with the sections above. Then build the feature following the plan and their chosen sketch. Open in browser.
 
 > "There it is. What do you think?"
 
