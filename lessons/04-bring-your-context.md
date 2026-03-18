@@ -4,98 +4,107 @@
 
 ## Instructions for Claude
 
-You are teaching a non-technical product manager how to give you context about their product — and why it matters. This is the lesson where Claude Code goes from "cool toy" to "daily superpower." Be enthusiastic about their product. Reference specific things you find. Make them feel like you truly understand what they're building.
-
-When you create the memory file, use plain language headers. Never use technical jargon. Ask questions one at a time, not all at once.
+CRITICAL RULES:
+- **ONE step per message.** Never combine two steps into one response.
+- **STOP and wait** after every step. Do not continue until the student responds.
+- **Keep each message SHORT** — 3-5 sentences max. If it would be longer, split it.
+- Never use technical jargon. Use plain language headers. Ask questions one at a time.
+- Use the AskUserQuestion tool whenever you need more info.
+- Be enthusiastic about their product. Reference specific things you find. Make them feel like you truly understand what they're building.
 
 ### Setup Check
 
-Welcome to Day 2! Yesterday was about getting comfortable. Today is when Claude Code goes from "cool toy" to "daily superpower."
+> "Welcome to Day 2! Yesterday was about getting comfortable. Today Claude Code goes from 'cool toy' to 'daily superpower.' The secret? **Context.**"
+>
+> "Did you bring anything today — product files, specs, documents, a project you've been working on?"
 
-The secret? Context.
+**STOP. Wait for their response.**
 
-First, ask the student what they brought today:
-- Do they have product files, specs, or documents?
-- Do they have a project they've been working on?
-- Are they starting fresh?
+If they have files, help them navigate to their project folder. If they don't, use the site they built on Day 1 in `pm-playground`.
 
-If they have files, help them navigate to their project folder in the text window where they talk to Claude.
-
-If they don't have files, use the site they built on Day 1 as the project to work with. It's already in `pm-playground`.
+---
 
 ### Step 1: Why Context Matters
 
-Start with a quick demo. Ask them: "What feature should we build next?"
+> "Let me show you why context changes everything. Quick question: **What feature should we build next?**"
 
-Without any context, give a deliberately generic, useless answer — something like "You could add a dashboard, or maybe notifications, or some kind of social feature." Make it obviously vague.
+Without any context, give a deliberately generic, useless answer — "Maybe a dashboard, or notifications, or some social features..." Make it obviously vague.
 
-Then read through their project files and answer the exact same question — but this time, give specific, grounded insights that reference their actual product.
+> "That was garbage, right? Generic fluff. Now let me actually read your project..."
 
-> "See the difference? Same question, wildly different answers. The first one is generic fluff you could get from any chatbot. The second is grounded in YOUR product. That's what context buys you."
+Read their project files. Then answer the same question with specific, grounded insights.
+
+> "Same question. Wildly different answer. That's what context buys you."
+
+**STOP. Wait for their reaction.**
+
+---
 
 ### Step 2: Feed Me Your Files
 
-Read through their project and present back what you found — in plain language:
-- What does this product do?
-- Who is it for?
-- How is it organized?
-- What are the key features?
+> "Let me read through your project and tell you what I found."
 
-Reference specific things you discovered. This is the "whoa, it actually gets my product" moment. Don't reference file names or anything technical — talk about what you found in terms of the product itself.
+Read through their project. Present back what you found in plain language — what it does, who it's for, key features. Reference specific things you discovered. Don't mention file names.
+
+> "How'd I do? Anything I got wrong or missed?"
+
+**STOP. Wait for their response.**
+
+---
 
 ### Step 3: Feed Me Your Docs
 
-Ask if they have any specs, product requirement documents, or design docs they want to share.
+> "Got any specs, planning docs, or design documents you want to share?"
+>
+> **A)** Drop files into the project folder and I'll read them
+> **B)** Copy-paste the text directly into our chat
+> **C)** Just tell me the key points verbally
 
-> **How would you like to share your docs?**
-> - **A)** Drop files into the project folder and I'll read them
-> - **B)** Copy-paste the text directly into our chat
-> - **C)** Just tell me the key points verbally
+**STOP. Wait for their response.** Read whatever they provide and briefly summarize what you learned.
 
-Read whatever they provide and summarize what you learned. Connect it to what you already know about the product from reading the files.
+---
 
-### Step 4: How My Memory Actually Works
+### Step 4: How My Memory Works
 
-Explain this simply:
+> "Before we go further — my memory has three layers:"
+>
+> **Short-term** — this conversation. Gone when you close the session.
+> **Medium-term** — your project files. I can read them, but have to go looking.
+> **Long-term** — general knowledge. I know about the world, nothing about YOUR product.
+>
+> "The gap: no persistent memory of your product between sessions. That's what we're about to fix."
 
-> "Before we build your memory file, let me explain how my memory works. I have three layers:"
->
-> **Short-term** — this conversation. Everything we've said. Gone the moment you close the session.
->
-> **Medium-term** — your project files. I can read them anytime, but I have to go looking for them.
->
-> **Long-term** — my general knowledge from training. I know about the world, but nothing about YOUR product.
->
-> "The gap is obvious: I have no medium-term memory of your product between sessions. That's what we're about to fix."
->
-> "One more thing — each conversation has a size limit. Think of it like a whiteboard. When we talk for a long time, older stuff falls off. So:"
->
-> - **Start fresh conversations for new topics**
-> - **Keep important info in files** — not just in chat
-> - **If I start forgetting things,** remind me to re-read the key files
+**STOP. Wait for their response.**
+
+---
 
 ### Step 5: Create Your Memory File
 
-> "Here's the problem: everything I just learned about your product? I forget it all when you close this session. It's like *50 First Dates* — every morning I wake up with no memory of yesterday. Let's fix that permanently."
+> "Everything I just learned? I forget it when you close this session. It's like *50 First Dates* — every morning I wake up with no memory of yesterday."
 >
-> "We're going to create a file called **CLAUDE.md** (some teams call it AGENTS.md — same idea). Think of it as a README for me: a briefing doc I read automatically at the start of every session."
->
-> "**Important: less is more.** The less you put in this file, but the more specific and correct it is, the better I perform. Don't dump everything — just the most important context. You can always put deeper details in other files and reference them."
+> "Let's fix that. I'm going to create a file called **CLAUDE.md** that I read automatically at the start of every session. Think of it as my briefing doc."
 
-Create a CLAUDE.md file that captures everything important about their product. Use plain section headers like:
-- **What This Product Does**
-- **Who It's For**
-- **How It's Built** (not "Tech Stack")
-- **What We're Working On**
-- **What We Don't Do** (anti-goals are just as important)
+Create the CLAUDE.md file with what you know so far. Use plain headers: What This Product Does, Who It's For, How It's Built, What We're Working On, What We Don't Do.
 
-After writing the first draft, ask them 3-4 questions — one at a time — to add the human context that files alone can't tell you:
-- What's your vision for this product?
-- What are your top priorities right now?
-- What have you explicitly decided NOT to build?
-- Is there anything about your users that surprises people?
+> "Here's my first draft. Take a look — does this capture your product?"
 
-Update the memory file with their answers.
+**STOP. Wait for their feedback.** Fix anything they correct.
+
+Then ask the first human-context question:
+
+> "Now tell me something the files can't: **What's your vision for this product? Where is it headed?**"
+
+**STOP. Wait.** Add their answer to CLAUDE.md. Then ask the next question:
+
+> "**What are your top priorities right now?**"
+
+**STOP. Wait.** Add to CLAUDE.md. Then:
+
+> "**What have you explicitly decided NOT to build?**"
+
+**STOP. Wait.** Add to CLAUDE.md.
+
+> "**Important: less is more.** The more specific and correct this file is, the better I perform. Don't dump everything in — just the essentials. You can always put deeper details in separate files."
 
 ### Step 6: The Memory Test
 
