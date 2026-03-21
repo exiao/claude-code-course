@@ -56,14 +56,25 @@ If they already have their own product's design or brand guidelines as a screens
 
 ### Step 3: Extract and Create
 
-When they paste the screenshot, study it carefully. Extract:
-- Color palette (primary, secondary, accent, backgrounds, text)
-- Typography feel (clean/bold/playful, sizing rhythm, weight usage)
-- Spacing patterns (tight/airy, grid structure)
-- Component style (button shapes, card treatments, border usage, shadows)
-- Overall personality (minimal, editorial, warm, technical)
+When they paste the screenshot, study it carefully. Create a `style-guide.md` file in their project that covers ALL of the following sections:
 
-Create a `style-guide.md` file in their project with all of this captured as specific, usable values.
+**1. Design philosophy** — 2-3 sentences about the overall feel and guiding principles extracted from the screenshot.
+
+**2. Target user + job-to-be-done** — Ask the student one question: "Who is this for and what's the main thing they're trying to do?" Use their answer to fill in a JTBD template: "When [situation], I want to [action], so I can [outcome]."
+
+**3. Layout + grid + spacing** — Grid structure, spacing scale (e.g. 4/8/12/16/24/32), vertical rhythm rules, whitespace preferences. Extract from what you see in the screenshot.
+
+**4. Typography rules** — Font families (or closest match), sizes for headings and body, weights, line-height, usage rules (e.g. sentence case for labels).
+
+**5. Color rules** — Roles (primary action, secondary, success/warning/error), interactive states (hover, focus, disabled), contrast requirements (WCAG AA).
+
+**6. Components** — Specific rules for: buttons (primary/secondary/destructive), inputs (label placement, help text, error states, validation timing), tables (alignment, density), empty states (explain why empty, show next action), errors (plain language, what happened, how to fix).
+
+**7. Content style** — Tone of voice, label patterns (verbs for actions, nouns for destinations), microcopy rules, error message format.
+
+**8. Accessibility checklist** — Keyboard navigation, visible focus states, contrast minimums, touch target sizes, screen reader labels.
+
+**9. Do/don't examples** — 3-5 concrete do/don't pairs based on the design style. E.g. "Do: use generous whitespace between sections. Don't: use divider lines to separate content."
 
 Do NOT walk through what's in the file. Do NOT teach them about the values.
 
@@ -115,9 +126,17 @@ If they have a screenshot of their actual live product right now, do this:
 **For Claude's use during this exercise:**
 
 - Design inspiration: designstyles.vercel.app
-- Color palettes should include: primary, secondary, accent, success, warning, error, background, surface, and text colors
-- Typography should specify font families, sizes for headings and body text, and weight variations
-- Include specific border radius values, shadow styles, and spacing scale
-- The style guide is a living document. Encourage students to update it as their brand evolves.
 - Always save as `style-guide.md` in the project root
 - When extracting from a screenshot, be specific and concrete. Don't guess or generalize. If you can see a rounded button with a specific shade of blue, capture that exact shade and radius.
+- The style guide is a living document. Encourage students to update it as their brand evolves.
+
+**Required sections in every style-guide.md:**
+1. Design philosophy (2-3 sentences)
+2. Target user + JTBD (ask the student, don't infer)
+3. Layout + grid + spacing (spacing scale, grid structure, whitespace rules)
+4. Typography (families, sizes for h1-h6 and body, weights, line-height, usage rules)
+5. Colors (primary, secondary, accent, success, warning, error, background, surface, text + hover/focus/disabled states + WCAG AA contrast)
+6. Components (buttons with primary/secondary/destructive variants, inputs with label/help/error/validation rules, tables, empty states, error states)
+7. Content style (tone, label patterns, microcopy rules, error message format)
+8. Accessibility (keyboard nav, focus states, contrast, touch targets, screen reader labels)
+9. Do/don't examples (3-5 concrete pairs grounded in the chosen style)
