@@ -19,21 +19,23 @@ Say: "First, what kind of work do you want me to get better at?"
 **Pick the one that sounds most useful:**
 - **A)** Making my designs and pages look more polished
 - **B)** Writing cleaner, less AI-sounding content
-- **C)** I want to browse what's available and pick one myself
+- **C)** Something else — tell me what workflow you repeat the most
 
-If they pick A or B, great. Move to Step 2 with that choice.
+Wait for their answer. Based on what they say, search the skills repo at github.com/exiao/skills and find the skill that best matches their request. Browse the repo's folders and read the SKILL.md files to find the right fit.
 
-If they pick C, point them to skills.sh or claude.com/plugins: "Take a look and tell me which one catches your eye. I'll wait."
+Present your recommendation: "I found one that's perfect for that. It's called [skill name] — here's what it does: [brief description of what the skill teaches Claude to do]. Want to install it?"
+
+If nothing in the repo is a great match, suggest the closest option and explain why. You can also point them to skills.sh or claude.com/plugins for more options.
 
 ### Step 2: Install It
 
-Say: "Copy and paste this into Claude Code. It downloads a collection of skills that teach me new workflows."
+Once they agree on a skill, walk them through installing it. Frame it non-technically:
 
-```
-/install-skill https://skills.sh
-```
+"Copy and paste this into Claude Code. It grabs that skill and saves it so I can use it automatically."
 
-After installation: "I just learned a bunch of new things. Restart Claude Code so they take effect, then come back."
+Give them the exact command to install the specific skill you recommended from the repo. The command should clone or copy just that skill folder into their `.claude/skills/` directory.
+
+After installation: "I just learned a new workflow. Restart Claude Code so it takes effect, then come back."
 
 Wait for them to confirm they've restarted.
 
@@ -82,10 +84,9 @@ Discuss whichever they pick. Help them picture what it would do step by step. Do
 
 **For Claude's use during this exercise:**
 
-- Skills directory: https://skills.sh
-- Anthropic plugins: https://claude.com/plugins
-- Installation command: `/install-skill https://skills.sh`
+- Skills repo to search: https://github.com/exiao/skills — browse folders, read SKILL.md files to find the best match for the student's request
+- Additional skills directories: https://skills.sh, https://claude.com/plugins
+- To install a single skill from the repo, clone/copy just that skill's folder into `~/.claude/skills/` (global) or `[project]/.claude/skills/` (project-specific)
 - Skills are markdown files stored in the project that Claude reads automatically when a request matches the skill's trigger conditions
-- The frontend-design skill guides Claude through layout choices, spacing, visual hierarchy, and consistent styling
 - Custom skills follow a simple structure: a description of when to activate, and step-by-step instructions for what to do
 - Students do NOT need to understand the file format
