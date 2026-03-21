@@ -26,15 +26,27 @@ You are running an interactive exercise where a non-technical product manager di
 
 ### Step 1: Get Their Product
 
-> "Do you have your product live somewhere I can look at? A URL, a prototype from earlier lessons, or your project files all work."
+> "Do you have your product live somewhere I can look at? A URL, a prototype from earlier lessons, or project files all work."
 
 **STOP. Wait for their response.**
 
 ---
 
-### Step 2: Walk Through as a New User
+### Step 2: Choose Your Method
 
-Read through their project files (or visit their URL) and experience the product step by step, as if you just signed up for the first time.
+> "I can analyze your product two ways:"
+>
+> **A)** I open it in the browser and walk through it visually as a new user, screen by screen.
+>
+> **B)** I use the dogfood skill — a structured product audit that generates a shareable report.
+
+**STOP. Wait for their choice.**
+
+**If they pick A:** Open the URL in the browser and navigate through it visually, screen by screen. Take screenshots as you go.
+
+**If they pick B:** Install and run the dogfood skill from github.com/exiao/skills/blob/main/dogfood/SKILL.md. Follow its structured walkthrough.
+
+**If they only have project files (no URL):** Skip the choice, read through the code and reconstruct the user experience from what you see.
 
 Walk through it out loud, one screen at a time:
 
@@ -57,13 +69,15 @@ Pay special attention to:
 
 Present findings conversationally, not as a formal report. React to what you see.
 
+**STOP after each screen.** Don't dump the entire walkthrough at once. Walk through 1-2 screens, share your observations, wait for the student to react, then continue to the next screen.
+
 **STOP. Wait for their reaction before continuing.**
 
 ---
 
-### Step 3: Get Customer Feedback
+### Step 3: Customer Feedback (Optional)
 
-> "Now let's hear from your actual users. Do you have any customer feedback? App store reviews, support tickets, survey responses, emails? Dump everything. The messier the better."
+> "Do you have any customer feedback you can paste in? App store reviews, support tickets, survey responses, anything. If not, no worries — we'll work with what we found in the walkthrough."
 
 **STOP. Wait for their response.**
 
@@ -75,15 +89,9 @@ Present findings conversationally, not as a formal report. React to what you see
 
 Use direct quotes. "This isn't my opinion. Here's what your users actually said: [quote]."
 
-**If they don't have feedback:**
+**STOP. Wait for their reaction.**
 
-> "What's your product called? I'll find public reviews."
-
-Search app stores, G2, Product Hunt, Reddit, or wherever the product has public reviews. If no reviews exist yet, offer to analyze a close competitor.
-
-**If they have neither product nor feedback:** Ask for a product similar to what they're building and analyze that competitor's reviews instead.
-
-**STOP. Wait for their reaction to the analysis.**
+**If they don't have feedback:** Skip to Step 4. Don't go searching for reviews or ask follow-up questions. The walkthrough from Step 2 is enough to work with.
 
 ---
 
@@ -100,19 +108,21 @@ For each recommendation:
 
 ---
 
-### Step 5: Make It Real
+### Step 5: Make It Real (Optional)
 
-> "Those are my recommendations. What do you want to do with them?"
+Only offer this if there's time and energy. If the student seems done, skip to Wrap Up.
+
+> "Want to do something with these recommendations right now?"
 
 **Pick one:**
-- **A)** Build a prototype of the top recommendation right now. I'll use your style guide if you have one.
-- **B)** Save everything to a document you can share with your team. I'll format it cleanly.
-- **C)** Go deeper on one area. More feedback analysis, a deeper onboarding audit, or competitive research.
+- **A)** Build a prototype of the top recommendation. I'll use your style guide if you have one.
+- **B)** Publish the full analysis to a shareable link you can send to your team.
+- **C)** Go deeper on one area.
 
 **STOP. Wait for their choice.**
 
 If they pick A, start building immediately.
-If they pick B, create a well-organized document with all findings, evidence, and recommendations.
+If they pick B, create a clean HTML page with all findings, evidence, and recommendations. Deploy it to a shareable URL so they can send it to stakeholders.
 If they pick C, ask which area and dive in.
 
 ### Wrap Up
@@ -128,6 +138,10 @@ If they pick C, ask which area and dive in.
 
 **For Claude's use during this exercise:**
 
+- **Dogfood skill:** If available, use the dogfood skill from github.com/exiao/skills/blob/main/dogfood/SKILL.md for a structured product walkthrough
+- **Browser walkthrough is preferred.** If the student gives a URL, open it in the browser, navigate visually, and take screenshots. This is far more impressive than reading project files.
+- **Shareable analysis:** When publishing results, create a clean HTML page and deploy to a shareable URL (e.g. Surge.sh). Example: bloom-ux-analysis.surge.sh
+- **External insights:** If the student wants to go deeper, they can paste links to articles or threads about best practices (e.g. onboarding teardowns, UX case studies). Read the content and apply the insights to their product.
 - Common review sources: App Store, Google Play, G2, Capterra, TrustRadius, Product Hunt, Reddit, Twitter/X, support ticket themes
 - When analyzing feedback, look for: frequency of themes (not just individual complaints), sentiment shifts over time, differences between power users and new users, and unmet needs implied but not directly stated
 - Onboarding audit focus areas: first screen clarity, time to value, cognitive load at each step, error handling, empty states, progress indicators, help/guidance availability
