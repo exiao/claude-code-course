@@ -56,27 +56,11 @@ If they already have their own product's design or brand guidelines as a screens
 
 ### Step 3: Extract and Create
 
-When they paste the screenshot, study it carefully. Create a `style-guide.md` file in their project that covers ALL of the following sections:
+When they paste the screenshot, study it carefully. Create a `style-guide.md` file in their project. Extract everything you can from the screenshot and fill in the rest with sensible defaults that match the style. Use context from earlier lessons (their product, their audience) to inform sections like target user and content tone.
 
-**1. Design philosophy** — 2-3 sentences about the overall feel and guiding principles extracted from the screenshot.
+See the **Required sections** in Reference Material below for exactly what to include.
 
-**2. Target user + job-to-be-done** — Ask the student one question: "Who is this for and what's the main thing they're trying to do?" Use their answer to fill in a JTBD template: "When [situation], I want to [action], so I can [outcome]."
-
-**3. Layout + grid + spacing** — Grid structure, spacing scale (e.g. 4/8/12/16/24/32), vertical rhythm rules, whitespace preferences. Extract from what you see in the screenshot.
-
-**4. Typography rules** — Font families (or closest match), sizes for headings and body, weights, line-height, usage rules (e.g. sentence case for labels).
-
-**5. Color rules** — Roles (primary action, secondary, success/warning/error), interactive states (hover, focus, disabled), contrast requirements (WCAG AA).
-
-**6. Components** — Specific rules for: buttons (primary/secondary/destructive), inputs (label placement, help text, error states, validation timing), tables (alignment, density), empty states (explain why empty, show next action), errors (plain language, what happened, how to fix).
-
-**7. Content style** — Tone of voice, label patterns (verbs for actions, nouns for destinations), microcopy rules, error message format.
-
-**8. Accessibility checklist** — Keyboard navigation, visible focus states, contrast minimums, touch target sizes, screen reader labels.
-
-**9. Do/don't examples** — 3-5 concrete do/don't pairs based on the design style. E.g. "Do: use generous whitespace between sections. Don't: use divider lines to separate content."
-
-Do NOT walk through what's in the file. Do NOT teach them about the values.
+Do NOT walk through what's in the file. Do NOT teach them about the values. Do NOT ask any questions.
 
 > "Done. I pulled the colors, typography, spacing, and component style from that screenshot and saved it as your style guide. From now on, everything I build will follow this."
 
