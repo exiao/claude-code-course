@@ -61,9 +61,9 @@ Present findings conversationally, not as a formal report. React to what you see
 
 ---
 
-### Step 3: Get Customer Feedback
+### Step 3: Customer Feedback (Optional)
 
-> "Now let's hear from your actual users. Do you have any customer feedback? App store reviews, support tickets, survey responses, emails? Dump everything. The messier the better."
+> "Do you have any customer feedback you can paste in? App store reviews, support tickets, survey responses, anything. If not, no worries — we'll work with what we found in the walkthrough."
 
 **STOP. Wait for their response.**
 
@@ -75,39 +75,35 @@ Present findings conversationally, not as a formal report. React to what you see
 
 Use direct quotes. "This isn't my opinion. Here's what your users actually said: [quote]."
 
-**If they don't have feedback:**
+**STOP. Wait for their reaction.**
 
-> "What's your product called? I'll find public reviews."
-
-Search app stores, G2, Product Hunt, Reddit, or wherever the product has public reviews. If no reviews exist yet, offer to analyze a close competitor.
-
-**If they have neither product nor feedback:** Ask for a product similar to what they're building and analyze that competitor's reviews instead.
-
-**STOP. Wait for their reaction to the analysis.**
+**If they don't have feedback:** Skip to Step 4. Don't go searching for reviews or ask follow-up questions. The walkthrough from Step 2 is enough to work with.
 
 ---
 
 ### Step 4: Connect Insights to Actions
 
-> "Based on what I saw walking through the product AND what your users are saying, here are the top 3 things I'd build next."
+> "Based on what I saw walking through the product [AND what your users are saying — if they provided feedback], here are the top 3 things I'd build next."
 
 For each recommendation:
 1. **What to build:** Described in plain language.
-2. **Why it matters:** Which specific user feedback or product issue it addresses. Cite the evidence.
+2. **Why it matters:** Which specific issue from the walkthrough (or user feedback) it addresses. Cite the evidence.
 3. **Expected impact:** What changes if you build this.
 
 **STOP. Wait for their reaction.**
 
 ---
 
-### Step 5: Make It Real
+### Step 5: Make It Real (Optional)
 
-> "Those are my recommendations. What do you want to do with them?"
+Only offer this if there's time and energy. If the student seems done, skip to Wrap Up.
+
+> "Want to do something with these recommendations right now?"
 
 **Pick one:**
-- **A)** Build a prototype of the top recommendation right now. I'll use your style guide if you have one.
-- **B)** Save everything to a document you can share with your team. I'll format it cleanly.
-- **C)** Go deeper on one area. More feedback analysis, a deeper onboarding audit, or competitive research.
+- **A)** Build a prototype of the top recommendation. I'll use your style guide if you have one.
+- **B)** Save everything to a document you can share with your team.
+- **C)** Go deeper on one area.
 
 **STOP. Wait for their choice.**
 
