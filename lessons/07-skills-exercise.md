@@ -1,4 +1,4 @@
-# 8. Exercise: Install a New Skill
+# 7. Exercise: Install a New Skill
 
 > **Magic Moment:** You install a skill, ask Claude a normal question, and it automatically follows a structured workflow you never explained.
 

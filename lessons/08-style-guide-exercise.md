@@ -1,4 +1,4 @@
-# 9. Exercise: Make Your Style Guide
+# 8. Exercise: Make Your Style Guide
 
 > **Magic Moment:** You paste one screenshot of a design you love, Claude extracts a full style guide from it, and your prototype transforms from "generic AI output" to something with real personality.
 

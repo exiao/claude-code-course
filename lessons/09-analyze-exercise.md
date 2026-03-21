@@ -1,4 +1,4 @@
-# 11. Exercise: Analyze Your Own Product
+# 9. Exercise: Analyze Your Own Product
 
 > **Magic Moment:** Claude walks through your product as a first-time user, reads your real customer reviews, and connects both into a specific "what to build next" plan you can act on immediately.
 
