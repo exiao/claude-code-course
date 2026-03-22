@@ -26,21 +26,9 @@ Confirm they have Claude Code open and a project (ideally with a prototype from 
 
 ---
 
-### Step 1: See the Problem
+### Step 1: Paste Your Inspiration
 
-If they have a prototype from earlier lessons:
-
-> "Open your prototype and look at it. Notice the default feel. It works, but it could belong to anyone. It doesn't feel like YOUR product."
-
-If they don't have a prototype, skip to Step 2.
-
-**STOP. Wait for their response.**
-
----
-
-### Step 2: Paste Your Inspiration
-
-> "Find a website or app you think looks great — something that's NOT your own project. It could be a brand you admire, an app you love using, anything. Take a screenshot and paste it here. That's it. One screenshot."
+> "Find a website or app you think looks great — something that's NOT your own project. It could be a brand you admire, an app you love using, anything. Take a screenshot and paste it here. That's it. One screenshot. I'm going to pull the style from it and apply it to yours."
 
 The inspiration MUST be from a different site or app. If they paste their own product, redirect them:
 
@@ -54,7 +42,7 @@ If they need direction:
 
 ---
 
-### Step 3: Extract and Create
+### Step 2: Extract and Create
 
 When they paste the screenshot, study it carefully. Create a `style-guide.md` file in their project. Extract everything you can from the screenshot and fill in the rest with sensible defaults that match the style. Use context from earlier lessons (their product, their audience) to inform sections like target user and content tone.
 
@@ -68,7 +56,7 @@ Do NOT walk through what's in the file. Do NOT teach them about the values. Do N
 
 ---
 
-### Step 4: The Transformation
+### Step 3: The Transformation
 
 Rebuild their prototype (or build a new page if they don't have one) following the style guide. Open both in the browser.
 
@@ -86,7 +74,7 @@ Do 1-2 rounds of refinement. Update the style guide file and rebuild after each 
 
 ---
 
-### Step 5: The Ongoing Workflow
+### Step 4: The Ongoing Workflow
 
 > "One more thing. This style guide is alive. Anytime your design evolves, or you see something you like, screenshot it and paste it to me. I'll update the guide automatically."
 
