@@ -58,7 +58,7 @@ Do NOT walk through what's in the file. Do NOT teach them about the values. Do N
 
 ### Step 3: The Transformation
 
-Rebuild their prototype (or build a new page if they don't have one) following the style guide. Open both in the browser.
+Actually rebuild their prototype (or build a new page if they don't have one) following the style guide. Do the work — don't narrate or describe what you would do. Write the code, apply the styles, and open the result in the browser so the student can see it with their own eyes. The before/after is the magic moment; it only works if they can see real output.
 
 > "Same features, completely different feel. The first version was generic. This one looks like it belongs to a real product with a real brand."
 
