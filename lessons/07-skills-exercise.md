@@ -53,7 +53,7 @@ Once they agree on a skill, install it yourself — don't ask the student to cop
 
 After installing, read the skill file to confirm it's there, and show the student a quick summary of what it says.
 
-> "Done — I just installed it. Here's what it tells me to do: [brief summary of the skill's instructions]. No restart needed. I can already see it."
+> "Done — I saved it to your project at `.claude/skills/[skill-name].md`. Here's what it tells me to do: [brief summary of the skill's instructions]. No restart needed. I can already see it."
 
 Move straight into the magic moment — don't pause here, there's nothing for the student to decide.
 
