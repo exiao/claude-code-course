@@ -55,13 +55,7 @@ After installing, read the skill file to confirm it's there, and show the studen
 
 > "Done — I just installed it. Here's what it tells me to do: [brief summary of the skill's instructions]. No restart needed. I can already see it."
 
-**STOP. Wait for their response.**
-
----
-
-### Step 3: The Magic Moment
-
-Do NOT tell them which skill will activate. Do NOT explain what's about to happen.
+Move straight into the magic moment — don't pause here, there's nothing for the student to decide.
 
 > "Now ask me to build something. Don't mention any skill or special instructions. Just describe what you want like you normally would."
 
