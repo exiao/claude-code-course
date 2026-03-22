@@ -49,21 +49,13 @@ If nothing in the repo is a great match, suggest the closest option and explain 
 
 ### Step 2: Install It
 
-Once they agree on a skill:
+Once they agree on a skill, install it yourself — don't ask the student to copy-paste commands. Download the SKILL.md file into the project's `.claude/skills/` directory.
 
-> "Copy and paste this into Claude Code. It grabs that skill and saves it so I can use it automatically."
+After installing, read the skill file to confirm it's there, and show the student a quick summary of what it says.
 
-Give them the exact command to install the specific skill you recommended from the repo. The command should clone or copy just that skill folder into their `.claude/skills/` directory.
+> "Done — I just installed it. Here's what it tells me to do: [brief summary of the skill's instructions]. No restart needed. I can already see it."
 
-> "Restart Claude Code so it takes effect, then come back."
-
-**STOP. Wait for them to confirm they've restarted.**
-
----
-
-### Step 3: The Magic Moment
-
-Do NOT tell them which skill will activate. Do NOT explain what's about to happen.
+Move straight into the magic moment — don't pause here, there's nothing for the student to decide.
 
 > "Now ask me to build something. Don't mention any skill or special instructions. Just describe what you want like you normally would."
 
@@ -112,7 +104,7 @@ Discuss whichever they pick. Help them picture what it would do step by step. Do
 
 - Skills repo to search: https://github.com/exiao/skills — browse folders, read SKILL.md files to find the best match for the student's request
 - Additional skills directories: https://skills.sh, https://claude.com/plugins
-- To install a single skill from the repo, clone/copy just that skill's folder into `~/.claude/skills/` (global) or `[project]/.claude/skills/` (project-specific)
-- Skills are markdown files stored in the project that Claude reads automatically when a request matches the skill's trigger conditions
+- To install a single skill from the repo, download the SKILL.md into `~/.claude/skills/` (global) or `[project]/.claude/skills/` (project-specific). Claude should do this directly — don't ask the student to run commands.
+- Skills are markdown files stored in the project that Claude can read immediately — no restart required
 - Custom skills follow a simple structure: a description of when to activate, and step-by-step instructions for what to do
 - Students do NOT need to understand the file format
