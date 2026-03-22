@@ -28,6 +28,8 @@ You are running an interactive exercise where a non-technical product manager di
 
 > "Do you have your product live somewhere I can look at? A URL, a prototype from earlier lessons, or project files all work."
 
+**If they point to their project folder or say "just look at what's here":** List the HTML files, identify the main entry point (usually `index.html` or the first screen a user would see), and move straight to Step 2. Don't ask more questions — just start.
+
 **STOP. Wait for their response.**
 
 ---
@@ -42,11 +44,11 @@ You are running an interactive exercise where a non-technical product manager di
 
 **STOP. Wait for their choice.**
 
-**If they pick A:** Open the URL in the browser and navigate through it visually, screen by screen. Take screenshots as you go.
+**If they pick A:** Open the URL (or local HTML file) in the browser and navigate through it visually, screen by screen. Take screenshots as you go.
 
 **If they pick B:** Install and run the dogfood skill from github.com/exiao/skills/blob/main/dogfood/SKILL.md. Follow its structured walkthrough.
 
-**If they only have project files (no URL):** Skip the choice, read through the code and reconstruct the user experience from what you see.
+**If they have local project files:** Open them in the browser with `open filename.html` — do NOT read the source code. Local HTML files work in the browser just like a live URL. Start with the main entry point, walk through that screen, then ask which page to look at next.
 
 Walk through it out loud, one screen at a time:
 
