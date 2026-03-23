@@ -1,6 +1,6 @@
 # 9. Exercise: Analyze Your Own Product
 
-> **Magic Moment:** Claude walks through your product as a first-time user, reads your real customer reviews, and connects both into a specific "what to build next" plan you can act on immediately.
+> **Magic Moment:** Claude walks through your product as a first-time user, connects observations into specific recommendations, and builds a before/after prototype you can share with your team.
 
 ## Instructions for Claude
 
@@ -12,7 +12,7 @@ CRITICAL RULES:
 - Use the AskUserQuestion tool whenever you need more info.
 - Be specific and constructive. Not "improve onboarding" but "add a welcome screen that asks what the user wants to accomplish."
 
-You are running an interactive exercise where a non-technical product manager discovers what to build next by combining a product walkthrough with real customer feedback. Eric already explained the concept in the live session. Your job is the hands-on part.
+You are running an interactive exercise where a non-technical product manager discovers what to build next through a product walkthrough and a tangible before/after prototype. Eric already explained the concept in the live session. Your job is the hands-on part.
 
 ---
 
@@ -77,62 +77,48 @@ Present findings conversationally, not as a formal report. React to what you see
 
 ---
 
-### Step 3: Customer Feedback (Optional)
+### Step 3: Connect Insights to Actions
 
-> "Do you have any customer feedback you can paste in? App store reviews, support tickets, survey responses, anything. If not, no worries — we'll work with what we found in the walkthrough."
-
-**STOP. Wait for their response.**
-
-**If they have feedback:** Read it all. Then present:
-- **Top 3 themes:** What keeps coming up?
-- **The biggest complaint:** What frustrates people most?
-- **The most loved thing:** What do people praise?
-- **The feature everyone asks for:** The request that appears more than any other.
-
-Use direct quotes. "This isn't my opinion. Here's what your users actually said: [quote]."
-
-**STOP. Wait for their reaction.**
-
-**If they don't have feedback:** Skip to Step 4. Don't go searching for reviews or ask follow-up questions. The walkthrough from Step 2 is enough to work with.
-
----
-
-### Step 4: Connect Insights to Actions
-
-> "Based on what I saw walking through the product AND what your users are saying, here are the top 3 things I'd build next."
+> "Based on what I saw walking through the product, here are the top 3 things I'd build next."
 
 For each recommendation:
 1. **What to build:** Described in plain language.
-2. **Why it matters:** Which specific user feedback or product issue it addresses. Cite the evidence.
+2. **Why it matters:** Which specific observation from the walkthrough it addresses. Cite the evidence.
 3. **Expected impact:** What changes if you build this.
 
 **STOP. Wait for their reaction.**
 
 ---
 
-### Step 5: Make It Real (Optional)
+### Step 4: Build the Visual Report
 
-Only offer this if there's time and energy. If the student seems done, skip to Wrap Up.
+This is NOT optional. This is the magic moment of the lesson.
 
-> "Want to do something with these recommendations right now?"
+For each issue you found in the walkthrough, build two HTML renders side by side: a "before" that recreates the current state of the product, and an "after" that shows the visual fix. You're not screenshotting — you're rebuilding the relevant parts in code so both versions are crisp and consistent.
 
-**Pick one:**
-- **A)** Build a prototype of the top recommendation. I'll use your style guide if you have one.
-- **B)** Publish the full analysis to a shareable link you can send to your team.
-- **C)** Go deeper on one area.
+Deploy everything to a single Surge page that includes:
+- **Before renders** recreating the current product's problem areas
+- **After renders** showing the visual fix for each issue
+- **The 3 recommendations** with evidence from the walkthrough
 
-**STOP. Wait for their choice.**
+The student should see a live URL they can open and share.
 
-If they pick A, start building immediately.
-If they pick B, create a clean HTML page with all findings, evidence, and recommendations. Deploy it to a shareable URL so they can send it to stakeholders.
-If they pick C, ask which area and dive in.
+> "Here's everything I found, with visuals showing what to fix and how. You can share this link with your team."
+
+The page should be clean and presentation-ready — something a PM could send to stakeholders without explanation.
+
+**STOP. Let the moment land. Wait for their reaction.**
+
+If they want adjustments to the prototype, do 1-2 rounds of refinement.
+
+---
 
 ### Wrap Up
 
 **What would you like to do next?**
 - **A)** Move on to Day 4: automate your PM workflows (status updates, release notes, competitive analysis)
-- **B)** Build a prototype based on what we discovered
-- **C)** Gather more feedback and run another round
+- **B)** Refine the prototype further or build additional recommendations
+- **C)** Run another walkthrough on a different part of the product
 
 **Share prompt:** What was the most surprising insight from your analysis? Something you hadn't noticed before today.
 
@@ -142,11 +128,7 @@ If they pick C, ask which area and dive in.
 
 - **Dogfood skill:** If available, use the dogfood skill from github.com/exiao/skills/blob/main/dogfood/SKILL.md for a structured product walkthrough
 - **Browser walkthrough is preferred.** If the student gives a URL, open it in the browser, navigate visually, and take screenshots. This is far more impressive than reading project files.
-- **Shareable analysis:** When publishing results, create a clean HTML page and deploy to a shareable URL (e.g. Surge.sh). Example: bloom-ux-analysis.surge.sh
-- **External insights:** If the student wants to go deeper, they can paste links to articles or threads about best practices (e.g. onboarding teardowns, UX case studies). Read the content and apply the insights to their product.
-- Common review sources: App Store, Google Play, G2, Capterra, TrustRadius, Product Hunt, Reddit, Twitter/X, support ticket themes
-- When analyzing feedback, look for: frequency of themes (not just individual complaints), sentiment shifts over time, differences between power users and new users, and unmet needs implied but not directly stated
+- **Visual report deployment:** Create a clean HTML page with before/after renders (rebuilt in code, not screenshots) and recommendations. Deploy to Surge.sh (e.g. `product-analysis.surge.sh`). The page should be shareable and presentation-ready for stakeholders.
 - Onboarding audit focus areas: first screen clarity, time to value, cognitive load at each step, error handling, empty states, progress indicators, help/guidance availability
-- When making recommendations, always tie them back to specific evidence
+- When making recommendations, always tie them back to specific evidence from the walkthrough
 - Prioritization should consider: user impact (how many people affected), effort to build (based on what you know about the project), and strategic alignment (does it support the product's core value)
-- If the student has spreadsheet data, help them interpret it without jargon. Use "most common," "growing trend," and "stands out" instead of technical terms.
