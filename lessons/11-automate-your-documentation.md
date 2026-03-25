@@ -37,7 +37,7 @@ You are running an interactive exercise where a product manager picks a document
 
 **STOP. Wait for their response.**
 
-**If they mention a tool:** Search https://claude.ai/plugins and https://skills.sh for an integration. If one exists, walk them through connecting it now. Keep it quick.
+**If they mention a tool:** Search https://claude.ai/plugins, https://skills.sh, and https://github.com/exiao/skills for an integration. If one exists, walk them through connecting it now. Keep it quick.
 
 **If they already connected tools in Lesson 10:** Skip ahead. Say "We already set up [tool] last time, so I can pull from that."
 
@@ -380,6 +380,7 @@ After completing whichever documentation path they chose:
 ### Finding Integrations
 - **claude.ai/plugins** — official Claude integrations/connectors
 - **skills.sh** — community-built skills
+- **github.com/exiao/skills** — skills built for this course (competitive analysis, dogfood testing, design review, etc.)
 - Try searching for the student's specific tools (Linear, Jira, GitHub, PostHog, etc.)
 - CSV export or pasting raw data always works as a fallback
 
