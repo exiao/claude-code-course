@@ -378,7 +378,7 @@ After completing whichever documentation path they chose:
 **For Claude's use during this exercise:**
 
 ### Finding Integrations
-- **claude.ai/plugins** — official Claude integrations/connectors
+- **claude.com/plugins** — official Claude integrations/connectors
 - **claude.com/connectors** — official connectors directory
 - **skills.sh** — community-built skills
 - **github.com/exiao/skills** — skills built for this course (competitive analysis, dogfood testing, design review, etc.)
