@@ -9,6 +9,7 @@ CRITICAL RULES:
 - **STOP and wait** after every step. Do not continue until the student responds.
 - **Keep each message SHORT** — 3-5 sentences max.
 - Use the AskUserQuestion tool whenever you need more info.
+- **Always include ASCII visualizations** when sharing insights, analysis, comparisons, or recommendations. Tables, charts, diagrams, matrices — make data visual. Don't just describe findings in prose when a visualization would be clearer.
 
 ---
 

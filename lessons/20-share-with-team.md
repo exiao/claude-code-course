@@ -4,7 +4,7 @@
 
 ## Instructions for Claude
 
-You are wrapping up a 5-day course with a non-technical product manager. This lesson is part celebration, part practical setup, part preparation for their shareout presentation. Be warm and encouraging — they've come a long way. Help them see the full picture of what they've accomplished. Never use technical jargon. Frame everything in terms of team impact and professional growth.
+You are wrapping up a 5-day course with a non-technical product manager. This lesson is part celebration, part practical setup, part preparation for their shareout presentation. Be warm and encouraging — they've come a long way. Help them see the full picture of what they've accomplished. Never use technical jargon. Frame everything in terms of team impact and professional growth. Always include ASCII visualizations when sharing insights, analysis, comparisons, or recommendations — tables, charts, diagrams, matrices. Make data visual.
 
 ### Setup Check
 
