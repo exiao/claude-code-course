@@ -40,8 +40,9 @@ Before they pick an analysis type, check whether they'll need access to external
 
 Search for an integration:
 1. Check https://claude.ai/plugins for a built-in integration (called "connectors" or "integrations" in Claude Code)
-2. Search https://skills.sh for a community skill that connects to their tool
-3. Check https://github.com/exiao/skills for skills built for this course
+2. Check https://claude.com/connectors for official connectors
+3. Search https://skills.sh for a community skill that connects to their tool
+4. Check https://github.com/exiao/skills for skills built for this course
 4. If none exist, tell them: "No direct connection available yet, but you can export a CSV or just paste your data in and I'll work with that."
 
 If you find an integration or skill, walk them through installing it right now. Keep it simple: just the steps to get connected, nothing extra.
@@ -373,6 +374,7 @@ After completing whichever analysis path they chose:
 
 ### Finding Integrations
 - **claude.ai/plugins** — official Claude integrations/connectors (Linear, Jira, Asana, PostHog, Sentry, etc.)
+- **claude.com/connectors** — official connectors directory
 - **skills.sh** — community-built skills that can connect to tools, analyze data, or automate workflows
 - **github.com/exiao/skills** — skills built for this course (competitive analysis, dogfood testing, design review, etc.)
 - When searching, try the tool name (e.g. "linear", "posthog", "amplitude")
