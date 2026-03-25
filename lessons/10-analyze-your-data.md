@@ -374,7 +374,7 @@ After completing whichever analysis path they chose:
 
 ### How to Find Integrations
 
-1. **[claude.com/connectors](https://claude.com/connectors)** — Official connectors directory. You can check individual connectors at `claude.com/connectors/{tool-name}` (e.g., [claude.com/connectors/linear](https://claude.com/connectors/linear)). These work with Claude Code, claude.ai, and Claude desktop.
+1. **[claude.com/connectors](https://claude.com/connectors)** — Official connectors directory. You can check individual connectors at `claude.com/connectors/{tool-name}` (e.g., [claude.com/connectors/linear](https://claude.com/connectors/linear)). These work with Claude Code, claude.com, and Claude desktop.
 2. **[skills.sh](https://skills.sh)** — Community-built skills directory. The site uses client-side JavaScript search, so the best way to search it is from the command line:
    ```
    npx skills find <tool-name>
@@ -391,7 +391,7 @@ After completing whichever analysis path they chose:
 
 ### Claude.com Official Connectors
 
-These all work with Claude Code, Claude desktop, and claude.ai. Link format: `claude.com/connectors/{name}`
+These all work with Claude Code, Claude desktop, and claude.com. Link format: `claude.com/connectors/{name}`
 
 | Tool | Connector Page | Docs |
 |------|---------------|------|
