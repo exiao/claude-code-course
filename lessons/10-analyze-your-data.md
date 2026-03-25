@@ -43,7 +43,7 @@ Search for an integration:
 2. Check https://claude.com/connectors for official connectors
 3. Search https://skills.sh for a community skill that connects to their tool
 4. Check https://github.com/exiao/skills for skills built for this course
-4. If none exist, tell them: "No direct connection available yet, but you can export a CSV or just paste your data in and I'll work with that."
+5. If none exist, tell them: "No direct connection available yet, but you can export a CSV or just paste your data in and I'll work with that."
 
 If you find an integration or skill, walk them through installing it right now. Keep it simple: just the steps to get connected, nothing extra.
 
