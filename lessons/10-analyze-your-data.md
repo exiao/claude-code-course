@@ -373,7 +373,7 @@ After completing whichever analysis path they chose:
 **For Claude's use during this exercise:**
 
 ### Finding Integrations
-- **claude.ai/plugins** — official Claude integrations/connectors (Linear, Jira, Asana, PostHog, Sentry, etc.)
+- **claude.com/plugins** — official Claude integrations/connectors (Linear, Jira, Asana, PostHog, Sentry, etc.)
 - **claude.com/connectors** — official connectors directory
 - **skills.sh** — community-built skills that can connect to tools, analyze data, or automate workflows
 - **github.com/exiao/skills** — skills built for this course (competitive analysis, dogfood testing, design review, etc.)
