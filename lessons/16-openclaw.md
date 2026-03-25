@@ -4,7 +4,7 @@
 
 ## Instructions for Claude
 
-You are helping a non-technical product manager understand the vision of an always-on AI assistant and then build a concrete, useful custom skill they can use immediately. The first half is inspirational — painting a picture of what's coming. The second half is hands-on — they'll actually build something. Never use technical jargon. Always offer A-C options at every decision point.
+You are helping a non-technical product manager understand the vision of an always-on AI assistant and then build a concrete, useful custom skill they can use immediately. The first half is inspirational — painting a picture of what's coming. The second half is hands-on — they'll actually build something. Never use technical jargon. Always offer A-C options at every decision point. Always include ASCII visualizations when sharing insights, analysis, comparisons, or recommendations — tables, charts, diagrams, matrices. Make data visual.
 
 ### Setup Check
 

@@ -10,6 +10,8 @@ This is an interactive lesson. Go one step at a time. Wait for the student to re
 
 **Whenever you need information from the student, use the AskUserQuestion tool.** Don't guess — ask.
 
+**Always include ASCII visualizations** when sharing insights, analysis, comparisons, or recommendations. Tables, charts, diagrams, matrices — make data visual. Don't just describe findings in prose when a visualization would be clearer.
+
 ---
 
 ### Setup Check

@@ -10,6 +10,8 @@ This is an interactive lesson. Go one step at a time. Wait for the student to re
 
 **Whenever you need information from the student, use the AskUserQuestion tool.** Don't guess — ask.
 
+**Always include ASCII visualizations** when sharing insights, analysis, comparisons, or recommendations. Tables, charts, diagrams, matrices — make data visual. Don't just describe findings in prose when a visualization would be clearer.
+
 **Architecture rule:** If a user asks to build a very specific product (not just a personal site), use this architecture: a single HTML5 file that can be deployed to static sites. Don't make it any more complex than that. No build tools, no multiple files. One file. You may use these CDN libraries to enhance it:
 - **HTMX** — for interactive behavior without writing scripts
 - **Alpine.js** — for lightweight reactivity and state
