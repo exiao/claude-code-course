@@ -37,7 +37,7 @@ You are running an interactive exercise where a product manager picks a document
 
 **STOP. Wait for their response.**
 
-**If they mention a tool:** Search https://claude.ai/plugins, https://claude.com/connectors, https://skills.sh, and https://github.com/exiao/skills for an integration. If one exists, walk them through connecting it now. Keep it quick.
+**If they mention a tool:** Search https://claude.com/connectors for official connectors (e.g., `claude.com/connectors/linear`), run `npx skills find <tool-name>` on skills.sh, check https://clawhub.ai/skills, and https://github.com/exiao/skills for an integration. If one exists, walk them through connecting it now. Keep it quick.
 
 **If they already connected tools in Lesson 10:** Skip ahead. Say "We already set up [tool] last time, so I can pull from that."
 
@@ -377,13 +377,51 @@ After completing whichever documentation path they chose:
 
 **For Claude's use during this exercise:**
 
-### Finding Integrations
-- **claude.com/plugins** — official Claude integrations/connectors
-- **claude.com/connectors** — official connectors directory
-- **skills.sh** — community-built skills
-- **github.com/exiao/skills** — skills built for this course (competitive analysis, dogfood testing, design review, etc.)
-- Try searching for the student's specific tools (Linear, Jira, GitHub, PostHog, etc.)
-- CSV export or pasting raw data always works as a fallback
+### How to Find Integrations
+
+1. **[claude.com/connectors](https://claude.com/connectors)** — Official connectors directory. You can check individual connectors at `claude.com/connectors/{tool-name}` (e.g., [claude.com/connectors/linear](https://claude.com/connectors/linear)). These work with Claude Code, claude.ai, and Claude desktop.
+2. **[skills.sh](https://skills.sh)** — Community-built skills directory. The site uses client-side JavaScript search, so the best way to search it is from the command line:
+   ```
+   npx skills find <tool-name>
+   ```
+   For example: `npx skills find jira`, `npx skills find linear`
+
+   Install a skill with:
+   ```
+   npx skills add <owner/repo@skill> -g -y
+   ```
+3. **[clawhub.ai/skills](https://clawhub.ai/skills)** — Another community skills directory. Also uses client-side search, so browse it in a browser.
+4. **[github.com/exiao/skills](https://github.com/exiao/skills)** — Skills built for this course.
+5. **Fallback** — If no direct integration exists, export a CSV from your tool or paste raw data directly into the chat. This always works.
+
+### Claude.com Official Connectors
+
+These all work with Claude Code, Claude desktop, and claude.ai. Link format: `claude.com/connectors/{name}`
+
+| Tool | Connector Page | Docs |
+|------|---------------|------|
+| Atlassian (Jira/Confluence) | [claude.com/connectors/atlassian](https://claude.com/connectors/atlassian) | [atlassian.com/platform/remote-mcp-server](https://www.atlassian.com/platform/remote-mcp-server) |
+| Amplitude | [claude.com/connectors/amplitude](https://claude.com/connectors/amplitude) | [amplitude.com/docs/analytics/amplitude-mcp](https://amplitude.com/docs/analytics/amplitude-mcp) |
+| Asana | [claude.com/connectors/asana](https://claude.com/connectors/asana) | [developers.asana.com/docs/using-asanas-model-control-protocol-mcp-server](https://developers.asana.com/docs/using-asanas-model-control-protocol-mcp-server) |
+| Box | [claude.com/connectors/box](https://claude.com/connectors/box) | [box.dev/guides/box-mcp/remote/](https://box.dev/guides/box-mcp/remote/) |
+| Clickup | [claude.com/connectors/clickup](https://claude.com/connectors/clickup) | [help.clickup.com/hc/en-us/articles/33335772678423](https://help.clickup.com/hc/en-us/articles/33335772678423-What-is-ClickUp-MCP) |
+| Cloudflare | [claude.com/connectors/cloudflare](https://claude.com/connectors/cloudflare) | [developers.cloudflare.com/agents/model-context-protocol/mcp-servers-for-cloudflare/](https://developers.cloudflare.com/agents/model-context-protocol/mcp-servers-for-cloudflare/) |
+| Glean | [claude.com/connectors/glean](https://claude.com/connectors/glean) | [docs.glean.com/administration/platform/mcp/about](https://docs.glean.com/administration/platform/mcp/about) |
+| Google Calendar | [claude.com/connectors/google-calendar](https://claude.com/connectors/google-calendar) | [support.claude.com/en/articles/11088742](https://support.claude.com/en/articles/11088742-using-the-gmail-and-google-calendar-integrations) |
+| Google Drive | [claude.com/connectors/google-drive](https://claude.com/connectors/google-drive) | [support.claude.com/en/articles/10166901](https://support.claude.com/en/articles/10166901-using-the-google-drive-integration) |
+| Granola | [claude.com/connectors/granola](https://claude.com/connectors/granola) | [go.granola.ai/mcp](https://go.granola.ai/mcp) |
+| HubSpot | [claude.com/connectors/hubspot](https://claude.com/connectors/hubspot) | [developers.hubspot.com/mcp](https://developers.hubspot.com/mcp) |
+| Linear | [claude.com/connectors/linear](https://claude.com/connectors/linear) | [linear.app/docs/mcp](https://linear.app/docs/mcp) |
+| Microsoft 365 | [claude.com/connectors/microsoft-365](https://claude.com/connectors/microsoft-365) | [support.claude.com/en/articles/12542951](https://support.claude.com/en/articles/12542951-enabling-and-using-the-microsoft-365-connector) |
+| Mixpanel | [claude.com/connectors/mixpanel](https://claude.com/connectors/mixpanel) | [docs.mixpanel.com/docs/features/mcp](https://docs.mixpanel.com/docs/features/mcp) |
+| Monday | [claude.com/connectors/monday](https://claude.com/connectors/monday) | [developer.monday.com/apps/docs/mondaycom-mcp-integration](https://developer.monday.com/apps/docs/mondaycom-mcp-integration) |
+| Sentry | [claude.com/connectors/sentry](https://claude.com/connectors/sentry) | [docs.sentry.io/product/sentry-mcp/](https://docs.sentry.io/product/sentry-mcp/) |
+| Slack | [claude.com/connectors/slack](https://claude.com/connectors/slack) | [docs.slack.dev/ai/mcp-server](https://docs.slack.dev/ai/mcp-server) |
+| Snowflake | [claude.com/connectors/snowflake](https://claude.com/connectors/snowflake) | [docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp) |
+| Stripe | [claude.com/connectors/stripe](https://claude.com/connectors/stripe) | [docs.stripe.com/mcp](https://docs.stripe.com/mcp) |
+| Zapier | [claude.com/connectors/zapier](https://claude.com/connectors/zapier) | [docs.zapier.com/mcp/home](https://docs.zapier.com/mcp/home) |
+
+> **Note:** Dropbox and WordPress were not found on claude.com/connectors as of March 2025. Check [claude.com/connectors](https://claude.com/connectors) for the latest list.
 
 ### Release Notes
 - Pull from GitHub commits/PRs, project tracker completed tickets, or manual bullet list
