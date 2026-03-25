@@ -26,7 +26,32 @@ You are running an interactive exercise where a product manager picks a real ana
 
 ---
 
-### Step 1: Pick Your Analysis
+### Step 1: Connect to Your Data (If Needed)
+
+Before they pick an analysis type, check whether they'll need access to external tools. This step is about making sure Claude can actually reach their data.
+
+> "Before we dive in, quick question: do you use any tools to manage your work or track data? Things like Linear, Jira, Asana for tasks, or PostHog, Mixpanel, Amplitude for analytics?"
+
+**STOP. Wait for their response.**
+
+**If they mention a tool:**
+
+> "Let's see if we can connect Claude directly to [tool]. That way I can pull your real data instead of you having to export anything."
+
+Search for an integration:
+1. Check https://claude.ai/plugins for a built-in integration (called "connectors" or "integrations" in Claude Code)
+2. Search https://skills.sh for a community skill that connects to their tool
+3. If neither exists, tell them: "No direct connection available yet, but you can export a CSV or just paste your data in and I'll work with that."
+
+If you find an integration or skill, walk them through installing it right now. Keep it simple: just the steps to get connected, nothing extra.
+
+**If they don't use any tools or want to skip:** Move on. They can paste data manually or describe things from memory.
+
+**STOP. Wait for confirmation they're ready.**
+
+---
+
+### Step 2: Pick Your Analysis
 
 > "What would be most useful to you right now? Pick one:"
 >
@@ -204,13 +229,11 @@ Consider different customer segments and willingness to pay.
 
 #### D1: Get their data
 
-> "Do you have analytics data you can share? A CSV export from your analytics tool works great — Google Analytics, Mixpanel, Amplitude, PostHog, even a spreadsheet."
->
-> "If you have an analytics tool with an MCP server (like PostHog), I can connect to it directly and query your data live."
+> "Do you have analytics data you can share? If we set up a connection to your analytics tool in the earlier step, I can query it directly. Otherwise, a CSV export works great — Google Analytics, Mixpanel, Amplitude, PostHog, even a spreadsheet."
 
 **STOP. Wait for their response.**
 
-**If they have an MCP server:** Connect to it and query their data directly. This is the most impressive path.
+**If they connected an analytics tool in Step 1:** Query their data directly. This is the most impressive path.
 **If they have a CSV:** Read it and analyze.
 **If they don't have data:** Help them think about what metrics matter most for their product. Suggest exporting from whatever tool they use. If they truly have nothing, skip to a discussion of what they should be tracking and why.
 
@@ -259,7 +282,7 @@ Present specific, data-backed recommendations. Tie every recommendation to a spe
 >
 > - Paste a list of features/tickets
 > - Share a CSV export from your project tool
-> - Connect me to JIRA or Linear if you have the MCP server set up
+> - If we connected your project tool earlier, I can pull directly from it
 > - Just describe the 10-15 things on your plate right now
 >
 > "The more context you give me — user research notes, usage data, customer feedback — the better I can prioritize."
@@ -331,7 +354,7 @@ After completing whichever analysis path they chose:
 
 **If B:** Ask which area and dive in.
 
-**If C:** Go back to Step 1 and run a different analysis.
+**If C:** Go back to Step 2 and run a different analysis.
 
 ---
 
@@ -346,6 +369,12 @@ After completing whichever analysis path they chose:
 ## Reference Material
 
 **For Claude's use during this exercise:**
+
+### Finding Integrations
+- **claude.ai/plugins** — official Claude integrations/connectors (Linear, Jira, Asana, PostHog, Sentry, etc.)
+- **skills.sh** — community-built skills that can connect to tools, analyze data, or automate workflows
+- When searching, try the tool name (e.g. "linear", "posthog", "amplitude")
+- If no direct integration exists, CSV export or pasting raw data always works as a fallback
 
 ### Competitive Analysis Framework
 - Structure prompt with product context first (name, description, positioning, key features, target customer)
