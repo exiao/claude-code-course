@@ -32,34 +32,38 @@ Confirm:
 
 ---
 
-### Step 1: Create a Render Account
+### Step 1: Set Up the Render MCP
 
-> "We'll use Render to host your project. It works for all project types and has a free tier."
+> "We'll use Render to host your project. First, let's connect Claude Code to Render so it can manage your deployments directly."
 
-> "Go to render.com and sign up. Fastest option: 'Sign in with GitHub' — you already have that account."
+Help the student set up the Render MCP server:
+1. Go to render.com and sign up (fastest: "Sign in with GitHub")
+2. Create an API key: Dashboard → Account Settings → API Keys (https://dashboard.render.com/settings#api-keys)
+3. Run this command in terminal (outside of Claude Code), replacing `<YOUR_API_KEY>` with their key:
 
-> "Tell me when you're signed in."
+```
+claude mcp add --transport http render https://mcp.render.com/mcp --header "Authorization: Bearer <YOUR_API_KEY>"
+```
+
+4. Verify it's connected: type `/mcp` inside Claude Code (scroll with arrow keys, enter/esc to navigate)
+5. Can also verify outside Claude Code with `claude mcp list`
+
+> "Now Claude Code can create services, deploy, and check status on Render directly. No clicking through dashboards."
 
 **STOP. Wait for their confirmation.**
 
 ---
 
-### Step 2: Connect and Deploy
+### Step 2: Deploy with Claude
 
-> "Now let's connect your GitHub repo to Render."
+> "Now let's deploy. I'll create a Render web service connected to your GitHub repo."
 
-Walk them through:
-1. From the Render dashboard, click **"New"** → **"Web Service"**
-2. Click **"Connect a repository"** and find their repo
-3. Render will try to auto-detect the build setup. Help them confirm or set:
-   - **Build command:** (e.g. `npm run build` for JS, or blank for plain HTML)
-   - **Start command:** (e.g. `npm start`, `node index.js`, `gunicorn app:app`)
-   - **Instance type:** Free
-4. Click **"Create Web Service"**
+Use the Render MCP to:
+1. Create a new web service connected to their GitHub repo
+2. Set the correct build and start commands based on their project type
+3. Deploy
 
-> "Render is building your project now. This takes 2-3 minutes. You'll see a log scrolling — that's Render setting up your server."
-
-> "I'll let you know when it's done."
+> "Render is building your project now. This takes 2-3 minutes."
 
 **STOP. Wait for the deploy to finish.**
 
@@ -74,6 +78,8 @@ Your Computer          GitHub              Render
 │            │    │            │    │ yourapp.onrender.com│
 └────────────┘    └────────────┘    └────────────────────┘
 ```
+
+> "And because we set up the MCP, Claude Code can check deploy status, view logs, and manage your service without you ever opening the Render dashboard."
 
 **STOP. Share the URL. Wait for their response.**
 
@@ -127,7 +133,7 @@ New version is live in ~2 minutes
 - **A)** Yes, I have a domain already.
 - **B)** Not now. The Render URL is fine.
 
-If A: In Render, go to your service → **Settings** → **Custom Domains** → **Add Custom Domain**. Then add a CNAME record at your domain registrar pointing to your `.onrender.com` URL. DNS usually propagates in under 30 minutes.
+If A: In Render, go to your service → **Settings** → **Custom Domains** → **Add Custom Domain**. Then add a CNAME record at your domain registrar pointing to your `.onrender.com` URL. DNS propagates in under 30 minutes usually.
 
 If B: Move to wrap up.
 
@@ -141,8 +147,8 @@ If B: Move to wrap up.
 
 ```
 ✓ Created a Render account
-✓ Connected your GitHub repo
-✓ Got a live URL
+✓ Set up the Render MCP (Claude Code manages your hosting)
+✓ Deployed and got a live URL
 ✓ Auto-deploy is on — every future push goes live automatically
 ```
 
@@ -161,8 +167,15 @@ If B: Move to wrap up.
 
 **For Claude's use during this exercise:**
 
-- **Render Web Service setup:**
-  - Static HTML: build command blank, publish directory `/`, or use Render's Static Site type instead of Web Service
+- **Render MCP setup:**
+  - Hosted endpoint: `https://mcp.render.com/mcp` (HTTP transport)
+  - Install: `claude mcp add --transport http render https://mcp.render.com/mcp --header "Authorization: Bearer <API_KEY>"`
+  - Verify inside Claude Code: `/mcp`
+  - Verify outside: `claude mcp list`
+  - MCP tools handle: create service, deploy, check status, view logs, manage env vars
+
+- **Build/start commands by project type:**
+  - Static HTML: build command blank, or use Render's Static Site type
   - React/Vite: build = `npm run build`, publish = `dist/`
   - React/CRA: build = `npm run build`, publish = `build/`
   - Node/Express: start = `node index.js` or `npm start`
@@ -170,12 +183,12 @@ If B: Move to wrap up.
   - Python/Django: start = `gunicorn myproject.wsgi`
 
 - **Troubleshooting:**
-  - "Build failed": usually a missing dependency or wrong build command. Read the log.
+  - "Build failed": usually a missing dependency or wrong build command. Use MCP to check logs.
   - "Service unavailable": app likely crashed on start. Check start command and that it listens on `process.env.PORT`.
   - Free tier cold start: 30-60s delay after inactivity. Normal. Not a bug.
   - Port issues: app must listen on `process.env.PORT` (not hardcoded 3000/8000).
 
 - **Custom domain on Render:**
-  - Settings → Custom Domains → Add domain
+  - Can be configured via MCP or dashboard: Settings → Custom Domains → Add domain
   - Student adds a CNAME record at their registrar pointing to `[service].onrender.com`
   - DNS propagation: usually <30 min, up to 48h
