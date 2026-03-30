@@ -71,13 +71,8 @@ Create a branch with a descriptive name based on the student's project. For exam
 > "I created a workspace called `[branch-name]`. We're working in the copy now. The main version is untouched."
 
 ```
-  main ●━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━●  ← safe, untouched
-       │ (your snapshots so far)
-       │
-       └──── [branch-name] ●               ← we're here, experimenting
-                            │
-                         (future changes
-                          go here)
+main (the real version)     ← safe, untouched
+  └── [branch-name]         ← we're here, experimenting
 ```
 
 **STOP. Wait for their response.**
