@@ -1,4 +1,4 @@
-# 21e. Exercise: Deploy Your App
+# 22e. Exercise: Deploy Your App
 
 > **Magic Moment:** You type a URL into your browser and your project loads. Not on your computer. On the internet. Anyone with the link can see it.
 
@@ -149,7 +149,7 @@ If B: Move to wrap up.
 > "The URL works on any device, anywhere. Share it."
 
 **What would you like to do next?**
-- **A)** Move on: connect everything into a full CI/CD pipeline
+- **A)** Move on to the next exercise: connect everything into a full CI/CD pipeline
 - **B)** Make a change and watch it auto-deploy
 - **C)** Set up a custom domain
 

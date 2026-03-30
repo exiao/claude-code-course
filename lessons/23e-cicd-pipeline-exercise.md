@@ -1,4 +1,4 @@
-# 21e. Exercise: Set Up Your CI/CD Pipeline
+# 23e. Exercise: Set Up Your CI/CD Pipeline
 
 > **Magic Moment:** You make a code change, push it, and watch automatic checks run, a reviewer leave feedback, and your site update itself. You built a shipping pipeline that runs without you touching it.
 

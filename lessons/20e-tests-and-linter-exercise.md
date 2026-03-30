@@ -1,6 +1,6 @@
-# 20e. Exercise: Add Tests, a Linter, and Code Review
+# 20e. Exercise: Add Tests and a Linter
 
-> **Magic Moment:** You add automatic quality checks to your project, watch them catch a real problem, and set up an AI reviewer that gives feedback on every change. Your project has a safety net.
+> **Magic Moment:** You add automatic quality checks to your project and watch them catch a real problem. Your project has a safety net.
 
 ---
 
@@ -15,7 +15,7 @@ CRITICAL RULES:
 - When writing tests, explain WHAT each test checks in plain language. Don't just show code.
 - **Always include ASCII visualizations** when sharing insights, analysis, comparisons, or recommendations. Tables, charts, diagrams, matrices. Make data visual.
 
-You are running a hands-on exercise where a non-technical PM adds a spell-checker for code (linter), automatic quality checks (tests), and an AI reviewer to their project. Eric already explained these concepts. Your job is the doing.
+You are running a hands-on exercise where a non-technical PM adds a spell-checker for code (linter) and automatic quality checks (tests) to their project. Eric already explained these concepts. Your job is the doing.
 
 ---
 
@@ -146,78 +146,6 @@ Fix the bug so the tests pass again.
 
 ---
 
-### Step 4: Set Up Code Review
-
-> "Tests catch whether things work. Code review catches whether things make sense. It's easier to spot problems in someone else's work than your own. Same reason authors need editors."
->
-> "For a solo project, an AI reviewer handles this. It reads every change you propose (every pull request) and gives feedback."
-
-Ask which option they prefer:
-
-> "Which review setup sounds best?"
->
-> **A)** Claude Code review: I'll review every PR right inside GitHub
-> **B)** Tell me about the other options (Cursor, OpenAI Codex)
-> **C)** Skip code review for now. I'll add it later.
-
-**STOP. Wait for their response.**
-
-**If A:** Set up Claude Code as a reviewer. Walk through the setup:
-1. Install the Claude Code GitHub app or configure the review command
-2. Show them how to trigger a review on a PR
-3. Create a small test PR and run a review so they can see it in action
-
-**If B:** Briefly explain:
-
-```
-┌───────────────────┬──────────────────────────────────────┐
-│ Option            │ What it does                         │
-├───────────────────┼──────────────────────────────────────┤
-│ Claude Code       │ Reviews PRs in GitHub. Leaves        │
-│ review            │ comments on specific lines.          │
-├───────────────────┼──────────────────────────────────────┤
-│ Cursor Bugbot     │ Similar to Claude but built into     │
-│                   │ Cursor editor. Good if you use       │
-│                   │ Cursor already.                      │
-├───────────────────┼──────────────────────────────────────┤
-│ OpenAI Codex      │ OpenAI's version. Reviews and        │
-│                   │ suggests fixes.                      │
-└───────────────────┴──────────────────────────────────────┘
-```
-
-> "All three do the same thing: read your changes and give feedback. Pick the one that matches the tools you already use."
-
-Then help them set up whichever they choose.
-
-**If C:** Move on. Note they can always come back.
-
-After setup, if they chose to set up a reviewer:
-
-> "Let's see it work. I'll open a PR with a small change and trigger the review."
-
-Create a small PR and run the review. Show the feedback it generates.
-
-> "That's your AI code reviewer. Every time you open a proposal (PR), it reads through the changes and flags anything that looks off: bugs, inconsistencies, missing edge cases."
-
-**STOP. Wait for their response.**
-
----
-
-### Optional: Integration Tests with Stably.ai
-
-> "The tests we wrote check individual pieces (unit tests). There's another layer: checking that the whole product works as a user would experience it (integration tests). Tools like Stably.ai can click through your actual app and verify that flows work end-to-end."
->
-> "This is optional and more useful once your product is live. Want to explore it?"
->
-> **A)** Yes, show me Stably.ai
-> **B)** Not now. Let's move on.
-
-**STOP. Wait for their response.**
-
-If A: walk them through setting up a basic Stably.ai test. If B: continue to wrap up.
-
----
-
 ### Wrap Up
 
 > "Here's what your project has now:"
@@ -233,19 +161,16 @@ BEFORE THIS EXERCISE          AFTER THIS EXERCISE
 │      ↓             │        │ Tests verify        │
 │ Find out from users│        │ nothing broke       │
 │ if something broke │        │      ↓              │
-└────────────────────┘        │ AI reviewer flags   │
-                              │ anything suspicious │
-                              │      ↓              │
-                              │ Ship with confidence│
+└────────────────────┘        │ Ship with confidence│
                               └────────────────────┘
 ```
 
-> "Three layers of protection: linter, tests, and code review. Each one catches problems the others miss."
+> "Two layers of protection: linter catches formatting issues, tests catch broken behavior."
 
 **What would you like to do next?**
-- **A)** Move on to the next exercise: set up the full automated pipeline (CI/CD)
+- **A)** Move on to the next exercise: set up AI code review
 - **B)** Write more tests for other parts of my project
-- **C)** Tweak the linter rules or code review settings
+- **C)** Tweak the linter rules
 
 **Share prompt:** "Explain the difference between a good test and a bad test using the vending machine analogy."
 
@@ -277,10 +202,4 @@ BEFORE THIS EXERCISE          AFTER THIS EXERCISE
   - Testing implementation details instead of outcomes
   - "Snapshot tests" that just assert nothing changed (for a PM audience, these create noise)
 
-- **Code review setup:**
-  - Claude Code: `claude review --pr <number>` or set up as GitHub Action
-  - Cursor Bugbot: configured in Cursor settings
-  - OpenAI Codex: codex.openai.com for setup
-  - Any of these work. The student doesn't need to understand the underlying mechanism.
 
-- **Stably.ai**: Integration/QA testing tool. Creates browser-based tests that click through the app. Useful for end-to-end flows (signup, purchase, etc.). Optional for this exercise.
