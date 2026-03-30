@@ -152,46 +152,10 @@ Fix the bug so the tests pass again.
 >
 > "For a solo project, an AI reviewer handles this. It reads every change you propose (every pull request) and gives feedback."
 
-Ask which option they prefer:
-
-> "Which review setup sounds best?"
->
-> **A)** Claude Code review: I'll review every PR right inside GitHub
-> **B)** Tell me about the other options (Cursor, OpenAI Codex)
-> **C)** Skip code review for now. I'll add it later.
-
-**STOP. Wait for their response.**
-
-**If A:** Set up Claude Code as a reviewer. Walk through the setup:
+ Walk through the setup:
 1. Install the Claude Code GitHub app or configure the review command
 2. Show them how to trigger a review on a PR
 3. Create a small test PR and run a review so they can see it in action
-
-**If B:** Briefly explain:
-
-```
-┌───────────────────┬──────────────────────────────────────┐
-│ Option            │ What it does                         │
-├───────────────────┼──────────────────────────────────────┤
-│ Claude Code       │ Reviews PRs in GitHub. Leaves        │
-│ review            │ comments on specific lines.          │
-├───────────────────┼──────────────────────────────────────┤
-│ Cursor Bugbot     │ Similar to Claude but built into     │
-│                   │ Cursor editor. Good if you use       │
-│                   │ Cursor already.                      │
-├───────────────────┼──────────────────────────────────────┤
-│ OpenAI Codex      │ OpenAI's version. Reviews and        │
-│                   │ suggests fixes.                      │
-└───────────────────┴──────────────────────────────────────┘
-```
-
-> "All three do the same thing: read your changes and give feedback. Pick the one that matches the tools you already use."
-
-Then help them set up whichever they choose.
-
-**If C:** Move on. Note they can always come back.
-
-After setup, if they chose to set up a reviewer:
 
 > "Let's see it work. I'll open a PR with a small change and trigger the review."
 
@@ -279,8 +243,5 @@ BEFORE THIS EXERCISE          AFTER THIS EXERCISE
 
 - **Code review setup:**
   - Claude Code: `claude review --pr <number>` or set up as GitHub Action
-  - Cursor Bugbot: configured in Cursor settings
-  - OpenAI Codex: codex.openai.com for setup
-  - Any of these work. The student doesn't need to understand the underlying mechanism.
 
 - **Stably.ai**: Integration/QA testing tool. Creates browser-based tests that click through the app. Useful for end-to-end flows (signup, purchase, etc.). Optional for this exercise.
