@@ -71,8 +71,13 @@ Create a branch with a descriptive name based on the student's project. For exam
 > "I created a workspace called `[branch-name]`. We're working in the copy now. The main version is untouched."
 
 ```
-main (the real version)     ← safe, untouched
-  └── [branch-name]         ← we're here, experimenting
+  main ●━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━●  ← safe, untouched
+       │ (your snapshots so far)
+       │
+       └──── [branch-name] ●               ← we're here, experimenting
+                            │
+                         (future changes
+                          go here)
 ```
 
 **STOP. Wait for their response.**
@@ -143,7 +148,17 @@ Open a pull request using `gh pr create`. Write a clear title and description.
 
 Share the PR URL so they can see it on GitHub.
 
-> "Go look at it in your browser. You'll see the description, the exact changes highlighted in green and red (green = added, red = removed), and a place for review comments."
+Before sending them to GitHub, show the visual difference. Extract the original version from main into a temp file and open both in the browser so the student can see the before and after side by side:
+
+```bash
+git show main:[filename] > /tmp/before-[filename]
+open /tmp/before-[filename]   # the original
+open [filename]                # the updated version
+```
+
+> "I just opened two browser tabs — put them side by side. The left one is the original, the right one has your changes. That's what your proposal is asking to ship."
+
+> "Now go look at the PR on GitHub too. You'll see the description, the exact changes highlighted in green and red (green = added, red = removed), and a place for review comments."
 
 **STOP. Wait for them to look at it and respond.**
 
