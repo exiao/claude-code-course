@@ -79,30 +79,56 @@ main (the real version)     ← safe, untouched
 
 ---
 
-### Step 3: Make a Change
+### Step 3: Make Some Changes
 
-> "Let's make a visible change so you can see the full workflow play out. What do you want to update?"
+> "Let's make a few visible changes so you can see the full workflow play out. I'm going to make two separate changes on purpose. You'll see why in a moment."
 
-**Pick one:**
-- **A)** Change a heading or some text on the main page
-- **B)** Update a color or style
-- **C)** You pick something. Surprise me.
+Make two distinct, visible changes to the student's project. For example: update a heading AND change a color. Keep them small and in different files if possible.
 
-**STOP. Wait for their choice.**
-
-Make the change they requested. Keep it small and visible.
-
-> "Done. I [describe what you changed]. Now let's save a snapshot."
-
-Save the change with a clear, descriptive message (commit). Explain:
-
-> "I just saved a snapshot (commit) with the message: '[descriptive message]'. Every snapshot is timestamped and labeled. Six months from now, you can look back and see exactly what changed, when, and why."
+> "I just made two changes: [describe change 1] and [describe change 2]. Now here's where it gets interesting."
 
 **STOP. Wait for their response.**
 
 ---
 
-### Step 4: Open a Proposal (Pull Request)
+### Step 4: Choose What to Include (Staging)
+
+> "You changed two things, but maybe you only want to ship one of them right now. You get to pick which changes go into your snapshot."
+
+Show them what changed:
+
+> "Here's what's different from the last snapshot:"
+
+Run `git diff --stat` and translate the output into plain language:
+
+```
+FILES YOU CHANGED
+┌──────────────┬──────────────────────────────────┐
+│ File         │ What changed                     │
+├──────────────┼──────────────────────────────────┤
+│ index.html   │ Updated the main heading         │
+│ style.css    │ Changed the background color     │
+└──────────────┴──────────────────────────────────┘
+```
+
+> "You can include both in one snapshot, or just one. This is called 'staging' (picking which changes go in). Think of it like packing a suitcase: you decide what goes in this trip."
+>
+> **A)** Include both changes in one snapshot
+> **B)** Just include the heading change, save the color for later
+> **C)** Just include the color change, save the heading for later
+
+**STOP. Wait for their choice.**
+
+If A: `git add .` and commit with a message covering both changes.
+If B or C: `git add [specific file]` for their choice, commit with a targeted message. Then note:
+
+> "The other change is still on your computer, just not in this snapshot. You can include it in a separate snapshot whenever you're ready. This is how teams keep changes organized: one snapshot per logical change, not one big dump of everything."
+
+**STOP. Wait for their response.**
+
+---
+
+### Step 5: Open a Proposal (Pull Request)
 
 > "Your change is saved in your workspace. Now you propose adding it to the main version. This is the part where your team would review the change before it goes live."
 
@@ -123,7 +149,7 @@ Share the PR URL so they can see it on GitHub.
 
 ---
 
-### Step 5: The PR Lifecycle
+### Step 6: The PR Lifecycle
 
 > "Here's what normally happens after someone opens a proposal:"
 
@@ -158,7 +184,7 @@ If C: walk them through leaving a comment on the PR via the GitHub website.
 
 ---
 
-### Step 6: Combine (Merge)
+### Step 7: Combine (Merge)
 
 Once they're ready, merge the PR using `gh pr merge`.
 
@@ -180,7 +206,7 @@ main ─────────────────────── ✓ c
 
 ---
 
-### Step 7: See Your History
+### Step 8: See Your History
 
 > "One more thing. You now have a full record of everything that happened."
 
@@ -199,7 +225,8 @@ Run `gh pr list --state merged` or show the commit history to display their work
 ```
 ✓ Created a project folder (repo)
 ✓ Created a workspace (branch)
-✓ Made changes and saved snapshots (commits)
+✓ Made changes and chose which to include (staging)
+✓ Saved snapshots (commits)
 ✓ Opened a proposal (pull request)
 ✓ Reviewed and combined (merged)
 ```
