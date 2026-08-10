@@ -119,7 +119,7 @@ Give them the full menu with magic moment teasers:
 | 18 | Comms | Git log → release notes + raw notes → stakeholder updates |
 | | **Bonus: Judge the Models Yourself** | |
 | E1 | Build Your Own Eval (`lessons/13-build-your-own-eval.md`) | Five models on decisions you already made — pick with evidence |
-| E2 | Wrong Answers Only (`lessons/13e-wrong-answers-only.md`) | Two confident, wrong answers. Find the flaw in each. |
+| E2 | Break Your Own Eval (`lessons/13e-break-your-own-eval.md`) | A wrong answer passes your answer key. You patch the key. |
 | | **Module 7: It Scales** | |
 | 19 | External Context | MCP server connected, new capabilities unlocked |
 | 20 | Personal OS | USER.md + SOUL.md → Claude knows you |
