@@ -22,6 +22,30 @@ You are running an interactive exercise where a product manager sets up their fi
 ### Setup Check
 
 > "You've been running analysis and writing documentation by hand. Now let's make Claude do that stuff on its own, on a schedule, without you touching the keyboard."
+>
+> "This is a different job than the one you've been using me for. There are three:"
+>
+> ```
+>  THINKING PARTNER    you collaborate with it
+>    judged on         does it name the real obstacle,
+>                      or restate your goals back to you?
+>    breaks when       it's slow. Waiting turns a
+>                      conversation into a form you submit.
+>
+>  TASK EXECUTOR       you hand it work and leave
+>    judged on         is the result usable without
+>                      a follow-up turn?
+>    breaks when       it quits early, or drifts over a
+>                      long run with nobody watching.
+>
+>  PROACTIVE AGENT     it works on a schedule       <- today
+>    judged on         weeks later, was the thing it
+>                      chose to keep the thing that mattered?
+>    breaks when       it hoards trivia, or quietly drops the
+>                      one correction you never want to repeat.
+> ```
+>
+> "Today is the third one. Nobody is watching when it runs, so we build the guardrails first."
 
 **STOP. Wait for their response.**
 

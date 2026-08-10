@@ -29,6 +29,27 @@ If they have files, help them navigate to their project folder. If they don't, u
 
 ### Step 2: Why Context Matters
 
+> "Before we start, one thing worth knowing. When people are disappointed by an AI answer, they usually blame the model and go looking for a better one. The model is only one of four parts."
+>
+> ```
+>   ┌─────────────────────────────┐
+>   │  CONTEXT                    │  what it knows about you
+>   │  ┌───────────────────────┐  │
+>   │  │  SKILLS               │  │  workflows it follows
+>   │  │  ┌─────────────────┐  │  │
+>   │  │  │  HARNESS        │  │  │  tools it can use
+>   │  │  │  ┌───────────┐  │  │  │
+>   │  │  │  │  MODEL    │  │  │  │  the part everyone argues about
+>   │  │  │  └───────────┘  │  │  │
+>   │  │  └─────────────────┘  │  │
+>   │  └───────────────────────┘  │
+>   └─────────────────────────────┘
+> ```
+>
+> "Swapping the model changes the smallest ring. Today we work on the biggest one."
+
+**STOP. Wait for their reaction.**
+
 > "Let me show you why context changes everything. I'm going to answer the same question twice — **before** and **after** reading your project."
 >
 > "**Without context:** What feature should you build next? Well... maybe a dashboard, or notifications, or some kind of social feature."
