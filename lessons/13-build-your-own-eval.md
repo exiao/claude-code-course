@@ -25,6 +25,19 @@ You are running an interactive exercise where a product manager builds a small e
 >
 > "The top four models today are about four points apart on the public index. None of those tests is a thing you did last week. So we are going to build a test that is."
 
+**Before Step 3, check what the student can actually run.** Ask which models they
+can reach: an API key (Anthropic, OpenAI, Google) usable from a script, several
+chat web apps, or only Claude Code. Then pick the matching path and say so out loud:
+
+- **API key(s):** run the script across every model the key reaches.
+- **Web apps only:** no script. They paste each task into each chat app and paste
+  the answer back; you save it to `eval/runs/<model>/<task>.md`.
+- **Claude Code only:** run the same task at two settings you *do* have — for
+  example a plan-first run versus a straight run, or two different Claude models.
+
+**Two models is enough.** The exercise works with 2 columns; five is the ceiling,
+not the requirement. Scale the counts below to whatever they actually have.
+
 **STOP. Wait for their response.**
 
 ---
@@ -69,9 +82,9 @@ Save these as `eval/answers.md`.
 
 > "Now we run all of them. Same prompt, same context, no hints."
 
-Write a small script that sends each task to each model the student has access to, and saves the **full text** of every answer into `eval/runs/<model>/<task>.md`. Run it and show the real output.
+Use the path you picked in the Setup Check. With an API key, write a small script that sends each task to each model and saves the **full text** of every answer into `eval/runs/<model>/<task>.md`. Without one, collect the answers by hand from the chat apps and save them to the same paths. Either way, show the real output.
 
-> "Twenty-five answers. Every one saved in full. We are not looking at a number yet."
+> "Five tasks times however many models you have. Every answer saved in full. We are not looking at a number yet."
 
 **STOP. Wait for it to finish.**
 

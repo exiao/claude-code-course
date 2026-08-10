@@ -117,6 +117,9 @@ Give them the full menu with magic moment teasers:
 | 16 | Competitive Analysis | Full competitor brief in minutes |
 | 17 | Backlog Prioritization | Scored, ranked, with reasoning you can defend |
 | 18 | Comms | Git log → release notes + raw notes → stakeholder updates |
+| | **Bonus: Judge the Models Yourself** | |
+| E1 | Build Your Own Eval (`lessons/13-build-your-own-eval.md`) | Five models on decisions you already made — pick with evidence |
+| E2 | Wrong Answers Only (`lessons/13e-wrong-answers-only.md`) | Two confident, wrong answers. Find the flaw in each. |
 | | **Module 7: It Scales** | |
 | 19 | External Context | MCP server connected, new capabilities unlocked |
 | 20 | Personal OS | USER.md + SOUL.md → Claude knows you |
