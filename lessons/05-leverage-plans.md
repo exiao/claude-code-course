@@ -146,3 +146,13 @@ Write the plan to `plan.md` with the sections above. Then build the feature foll
 "I want to make _____. This is for _____, who are trying to _____."
 
 **Pro tip:** Start a fresh chat after big milestones. Long conversations make Claude less sharp. Your CLAUDE.md means you don't lose context.
+
+**Choosing between quality, cost, and speed:**
+
+Planning first is really a bet that quality is worth a little more time. Worth naming the three you always trade between:
+
+- **Quality** is only measurable against your own tasks. Benchmarks try to answer this for you and often do not generalize.
+- **Cost** matters most for work that runs in the background and is not time sensitive.
+- **Speed** is what you feel. You can tell the difference between collaborating with a partner and submitting a form.
+
+A plan spends a little time and cost up front to buy quality. That is the right trade when rebuilding would cost more, which is most of the time.

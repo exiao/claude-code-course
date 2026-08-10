@@ -113,3 +113,19 @@ If they have a screenshot of their actual live product right now, do this:
 7. Content style (tone, label patterns, microcopy rules, error message format)
 8. Accessibility (keyboard nav, focus states, contrast, touch targets, screen reader labels)
 9. Do/don't examples (3-5 concrete pairs grounded in the chosen style)
+
+**Instructions go stale when the model changes.**
+
+Worth telling the student at the end of this exercise. A style guide is written instructions Claude reads every time, and so are the prompting habits they have picked up. Those habits expire.
+
+When Opus 5 shipped, Anthropic's own prompting guide told people to delete instructions that made the previous model better:
+
+| What you were told to add | What the guide says now |
+|---|---|
+| "Double-check your answer." Made older models catch their own slips. | Remove it. It already self-corrects. The instruction compounds and burns tokens for no gain. |
+| "Include a final verification step." Standard scaffolding for years. | Remove it. Causes over-verification. Deleting it costs nothing in quality. |
+| "Only report high severity issues." Kept review noise down. | Remove it. It obeys literally and reports less. Ask for everything, filter after. |
+
+The habit to teach: when the model changes, reread the guide and delete before you add. Advice that helped last year can hurt this year.
+
+Read the current guide at https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering

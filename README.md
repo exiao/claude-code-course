@@ -26,6 +26,8 @@ Interactive lessons designed to be pasted into Claude Code. Each lesson guides y
 - `09-style-guide.md` — Create your style guide so everything matches your brand
 - `10-recreate-designs.md` — Recreate any design you see on the internet
 - `11-analyze-and-discover.md` — Discover what to build next from user feedback and product analysis
+- `13-build-your-own-eval.md` — Build an evaluation on your own decisions and pick a model with evidence
+- `13e-wrong-answers-only.md` — Two confident, wrong answers. Find the flaw in each.
 
 ### Day 4 — Automate Your Whole Job
 - `12-marketing-assets.md` — Create diagrams, social graphics, and animated demos
