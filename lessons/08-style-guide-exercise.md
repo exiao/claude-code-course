@@ -42,19 +42,23 @@ Confirm they have Claude Code open and a project (ideally with a prototype from 
 
 ### A1: Connect Claude Design
 
-Run these for them. Do not ask them to type commands.
+Run this for them. Do not ask them to type commands.
 
 ```
 claude mcp add --scope user --transport http claude-design https://api.anthropic.com/v1/design/mcp
 ```
 
-Then log in with `/design-login`.
+**Then tell them to restart Claude Code. This step is not optional.**
 
-> "Connected. Claude Design and Claude Code now talk to each other."
+Claude Code loads MCP tools when a session starts. The server you just added will report "✔ Connected" immediately, but none of its tools exist in the current session — so the next step will fail if you skip the restart.
 
-If the connection fails twice, switch to Path B without commentary.
+> "Added. Quit Claude Code and start it again — takes five seconds. The connection only wakes up on a fresh start."
 
-**STOP. Wait for their response.**
+After they restart, confirm the tools are live before continuing. Look for tools named `mcp__claude-design__*`; `list_design_systems` is a good one to try. The first call may open a browser to authorize — that's expected, have them approve it.
+
+If the tools still aren't there after one restart, or authorization fails twice, switch to Path B without commentary.
+
+**STOP. Wait for them to restart and come back.**
 
 ---
 
@@ -78,9 +82,18 @@ If they need direction:
 
 If earlier lessons didn't tell you what their product is and who uses it, ask that one question first and wait.
 
-Use Claude Design to create a design system from that screenshot. Cover the same ground as the **Required sections** in Reference Material below: philosophy, layout and spacing, typography, colors with states, components, content tone, accessibility.
+You read the screenshot and author the design system — the MCP server stores and serves it, it does not generate one for you. Cover the same ground as the **Required sections** in Reference Material below: philosophy, layout and spacing, typography, colors with states, components, content tone, accessibility.
 
-Then run `/design-sync` so your codebase and the design system match.
+Build it as a set of small HTML preview files (one per area — colors, type, components) plus a shared tokens stylesheet, then push it up. The order that works:
+
+1. Write the token stylesheet and preview files locally.
+2. Create the design system. **The MCP server cannot create one** — it can only list existing design systems and bind a project to one. Use the built-in `DesignSync` tool's `create_project`, or have the student create it at claude.ai/design.
+3. Push the files into it with that same tool's `finalize_plan` then `write_files`.
+4. Create a project bound to it: the MCP's `create_project`, passing `design_system_id`.
+
+`DesignSync` and the MCP both have methods called `create_project`, `finalize_plan`, and `write_files`. They are different tools writing to different places — `DesignSync` for the design system, the MCP for projects. Don't mix a plan token from one with a write on the other.
+
+Give each preview file a first-line `<!-- @dsCard group="..." -->` comment — that's what puts it on a card in the Design System pane. Without it the files upload but the pane looks empty, and the student concludes it didn't work.
 
 Do NOT walk through what's in it. Do NOT teach them the values. Do NOT ask questions.
 
@@ -94,15 +107,26 @@ Do NOT walk through what's in it. Do NOT teach them the values. Do NOT ask quest
 
 Actually rebuild their prototype (or build a new page if they don't have one) using the design system. Do the work — don't narrate it. Write the code and open the result in the browser so the student sees it with their own eyes. The before/after is the magic moment; it only works with real output.
 
+Push the rebuilt page into a Claude Design project (`create_project` with the `design_system_id` from the previous step, then `finalize_plan` and `write_files`) and give them that link. `write_files` returns a `url` — send them the page-specific one, not the project root.
+
+**Write the page to the project root.** Only root-level `.html` files register as Pages. A file at `pages/Storefront.html` uploads fine and shows up in the file list, but the Pages menu stays empty and the student sees an empty canvas — a project with no designs in it. Check the response: `write_files` and `copy_files` return a `pages_written` field listing the root-level pages they created. If that field is missing, nothing landed as a design; fix the path before telling the student it's ready. Mind that moving a page to the root changes what its relative links resolve to.
+
+Two more things that make students think it's broken:
+
+- **The design system does not appear under "Projects."** It's under the **Design systems** tab. Say so before they go looking.
+- `write_files` takes inline `data` only — its `local_path` parameter is accepted but not implemented. To move a file that's already in another project (like a component out of the design system), use `copy_files` with `src_project_id`; the copy happens server-side, so large files don't have to pass through the conversation.
+
 > "Same features, completely different feel. The first version was generic. This one looks like it belongs to a real product with a real brand."
 
 **STOP. Let the comparison land. Wait for their reaction.**
 
 Then:
 
-> "Open it in Claude Design and drag something around — the button, the spacing, whatever. Change it there, I'll pull it back into the code."
+> "Open it in Claude Design and drag something around — the button, the spacing, whatever. Change it there and tell me, I'll pull it back into the code."
 
-Run `/design-sync` again after they edit. Rebuild. Show them.
+After they edit, read the changed files back with the MCP's `list_files` and `read_file` and apply them to the codebase. Rebuild. Show them.
+
+When you write to a project the student also has open in the browser, pass `if_match` with the etag from your last read. Without it a concurrent edit is silently overwritten — with it you get a conflict you can recover from.
 
 **STOP. Wait for feedback.**
 
@@ -117,7 +141,7 @@ Do 1-2 rounds of refinement, waiting each time.
 If they have a screenshot of their actual live product right now:
 - Have them paste it
 - Update the design system to match their real product
-- `/design-sync` and rebuild to show the result
+- Push the updated files with `write_files` and rebuild to show the result
 
 **STOP. Wait for their response.**
 
@@ -205,7 +229,10 @@ If they have a screenshot of their actual live product right now:
 **For Claude's use during this exercise:**
 
 - Design inspiration: designstyles.vercel.app
-- Path A: MCP server is `https://api.anthropic.com/v1/design/mcp`. Skills: `/design-login` to sign in, `/design-sync` to hand the codebase to Claude Design and pull changes back.
+- Path A: MCP server is `https://api.anthropic.com/v1/design/mcp`. Everything in this exercise runs through that server — add it, restart Claude Code, and use its tools directly. It authorizes itself in the browser on first call.
+- The MCP surface, in the order you'll want it: `list_design_systems` → `create_project` (bind with `design_system_id`) → `finalize_plan` → `write_files` / `copy_files` → `render_preview`. Also available: `read_file`, `list_files`, `delete_files`, `list_comments`, `update_sharing`, member management.
+- `finalize_plan` is the write boundary — declare paths first, pass the returned `plan_token` to the write. For an iterative session pass `scope: "project"` instead of a path list; one approval then covers the whole session.
+- The `/design-login` and `/design-sync` skills are not required for this exercise and may not exist in a given install. Don't send students to them; if they're absent it reads as a broken setup. The MCP does the auth and the file movement on its own.
 - Path A setup docs: https://support.claude.com/en/articles/14604397-set-up-your-design-system-in-claude-design
 - Path B: always save as `style-guide.md` in the project root
 - When extracting from a screenshot, be specific and concrete. Don't guess or generalize. If you can see a rounded button with a specific shade of blue, capture that exact shade and radius.
@@ -236,4 +263,4 @@ When Opus 5 shipped, Anthropic's own prompting guide told people to delete instr
 
 The habit to teach: when the model changes, reread the guide and delete before you add. Advice that helped last year can hurt this year.
 
-Read the current guide at https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering
+Read the current guide at https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview — and the model-specific page for whatever model you're on, e.g. [Prompting Claude Opus 5](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-opus-5).
