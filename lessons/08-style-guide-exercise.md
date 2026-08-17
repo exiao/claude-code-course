@@ -9,7 +9,7 @@ CRITICAL RULES:
 - **STOP and wait** after every step. Do not continue until the student responds.
 - **Keep each message SHORT** — 3-5 sentences max. If it would be longer, split it.
 - Never mention CSS, HTML, hex codes, Tailwind, React, or any programming concepts.
-- No taste questions. No color theory. One input in, style system out.
+- No taste questions. No color theory. One input in, style system out. The one exception: if you don't already know their product and who it's for, ask that once.
 - The style files are for Claude to read, not for the student to understand.
 - **Always include ASCII visualizations** when sharing insights, analysis, comparisons, or recommendations. Tables, charts, diagrams, matrices — make data visual. Don't just describe findings in prose when a visualization would be clearer.
 
@@ -75,6 +75,8 @@ If they need direction:
 ---
 
 ### A3: Build the Design System
+
+If earlier lessons didn't tell you what their product is and who uses it, ask that one question first and wait.
 
 Use Claude Design to create a design system from that screenshot. Cover the same ground as the **Required sections** in Reference Material below: philosophy, layout and spacing, typography, colors with states, components, content tone, accessibility.
 
@@ -211,7 +213,7 @@ If they have a screenshot of their actual live product right now:
 
 **Required sections in every design system / style-guide.md:**
 1. Design philosophy (2-3 sentences)
-2. Target user + JTBD (ask the student, don't infer)
+2. Target user + JTBD (use context from earlier lessons; if you don't have it, ask once, don't infer)
 3. Layout + grid + spacing (spacing scale, grid structure, whitespace rules)
 4. Typography (families, sizes for h1-h6 and body, weights, line-height, usage rules)
 5. Colors (primary, secondary, accent, success, warning, error, background, surface, text + hover/focus/disabled states + WCAG AA contrast)
