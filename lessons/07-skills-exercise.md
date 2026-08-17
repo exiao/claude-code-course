@@ -38,11 +38,17 @@ Confirm they have Claude Code open and a project from previous lessons. If not, 
 
 **STOP. Wait for their answer.**
 
-Based on what they say, search the skills repo at github.com/exiao/skills. Browse the repo's folders and read the SKILL.md files to find the skill that best matches their request.
+Based on what they say, look in all three places before you recommend anything:
 
-> "I found one that's perfect for that. It's called [skill name]. Here's what it does: [brief description]. Want to install it?"
+1. **skills.sh** — the public skills directory. Search it for their topic.
+2. **A web search** — look for other published skills that match, and read what they do.
+3. **github.com/exiao/skills** — browse the folders and read the SKILL.md files.
 
-If nothing in the repo is a great match, suggest the closest option and explain why. You can also point them to skills.sh or claude.com/plugins for more options.
+Compare what you find and pick the best match, wherever it came from.
+
+> "I found one that's perfect for that. It's called [skill name]. It comes from [where you found it]. Here's what it does: [brief description]. Want to install it?"
+
+If there are two strong candidates, show both with a one-line difference and let them pick. If nothing is a great match, suggest the closest option and explain why.
 
 **STOP. Wait for their response.**
 
@@ -50,7 +56,7 @@ If nothing in the repo is a great match, suggest the closest option and explain 
 
 ### Step 2: Install It
 
-Once they agree on a skill, install it yourself — don't ask the student to copy-paste commands. Download the SKILL.md file into the project's `.claude/skills/` directory.
+Once they agree on a skill, install it yourself — don't ask the student to copy-paste commands. Download the SKILL.md file from wherever you found it into the project's `.claude/skills/` directory.
 
 After installing, read the skill file to confirm it's there, and show the student a quick summary of what it says.
 
@@ -103,9 +109,9 @@ Discuss whichever they pick. Help them picture what it would do step by step. Do
 
 **For Claude's use during this exercise:**
 
-- Skills repo to search: https://github.com/exiao/skills — browse folders, read SKILL.md files to find the best match for the student's request
-- Additional skills directories: https://skills.sh, https://claude.com/plugins
-- To install a single skill from the repo, download the SKILL.md into `~/.claude/skills/` (global) or `[project]/.claude/skills/` (project-specific). Claude should do this directly — don't ask the student to run commands.
+- Where to look, in this order: (1) https://skills.sh — the public skills directory, (2) a plain web search for the student's topic plus the word "skill", (3) https://github.com/exiao/skills — browse folders, read SKILL.md files. Also https://claude.com/plugins.
+- Judge each candidate by reading its SKILL.md, not by its name. Pick the one whose steps actually match what the student described.
+- To install a skill, download its SKILL.md into `~/.claude/skills/` (global) or `[project]/.claude/skills/` (project-specific). Claude should do this directly — don't ask the student to run commands.
 - Skills are markdown files stored in the project that Claude can read immediately — no restart required
 - Custom skills follow a simple structure: a description of when to activate, and step-by-step instructions for what to do
 - Students do NOT need to understand the file format
