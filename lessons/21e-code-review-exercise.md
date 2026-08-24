@@ -2,6 +2,9 @@
 
 > **Magic Moment:** You open a proposal (PR) and an AI reviewer automatically reads your changes and leaves feedback. You have an editor that never sleeps.
 
+
+> **Deep dive.** The fast path through this material is `24e-ship-it-exercise.md`, which reaches a reviewed pull request with a live preview in about ten minutes. Run this file when a student wants code review slowly and in full.
+
 ---
 
 ## Instructions for Claude

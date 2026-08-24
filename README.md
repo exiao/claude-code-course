@@ -26,8 +26,7 @@ Interactive lessons designed to be pasted into Claude Code. Each lesson guides y
 - `09-style-guide.md` — Create your style guide so everything matches your brand
 - `10-recreate-designs.md` — Recreate any design you see on the internet
 - `11-analyze-and-discover.md` — Discover what to build next from user feedback and product analysis
-- `13-build-your-own-eval.md` — Build an evaluation on your own decisions and pick a model with evidence
-- `13e-break-your-own-eval.md` — Claude writes a wrong answer that passes your answer key. You patch the key.
+- `13-build-your-own-eval.md` — Build an evaluation on your own decisions, then break it: Claude writes a wrong answer that passes your answer key, and you patch the key
 
 ### Day 4 — Automate Your Whole Job
 - `12-marketing-assets.md` — Create diagrams, social graphics, and animated demos
@@ -37,10 +36,17 @@ Interactive lessons designed to be pasted into Claude Code. Each lesson guides y
 - `16-openclaw.md` — Your AI chief of staff + build your own custom skill
 
 ### Day 5 — Bring Prototypes to Production
-- `17-shipping-safely.md` — How to release features without breaking everything
-- `18-github-and-cicd.md` — GitHub — where your product lives online
-- `19-publish-your-app.md` — Publish your app with automatic quality checks
-- `20-share-with-team.md` — Share your setup with your team + course wrap-up
+- `24e-ship-it-exercise.md` — **Start here.** GitHub, an AI review with an architecture diagram, a live preview URL, then tests and automatic checks. One loop.
+
+Deep dives, one topic at a time. Use these when a student wants more than the loop above:
+- `18e-github-exercise.md` — Staging, commit history, and the full pull request lifecycle
+- `19e-architecture-exercise.md` — Read your architecture and its tradeoffs
+- `20e-tests-and-linter-exercise.md` — The four kinds of tests, coverage, and the vending machine rule
+- `21e-code-review-exercise.md` — Every code review option, with screenshots
+- `22e-publish-your-app-exercise.md` — Render, the MCP server, and automatic per-PR previews
+- `23e-cicd-pipeline-exercise.md` — The full pipeline, built one piece at a time
+
+Earlier drafts of these lessons are kept in `lessons/archive/`: `17-shipping-safely.md`, `18-github-and-cicd.md`, `19-backend-architecture.md`, `19-publish-your-app.md`, `20-adding-tests.md`, `20-share-with-team.md`.
 
 ### Day 6 — Shareouts & Q&A
 No lesson files — this is your day to present what you've built!
