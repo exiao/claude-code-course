@@ -118,8 +118,7 @@ Give them the full menu with magic moment teasers:
 | 17 | Backlog Prioritization | Scored, ranked, with reasoning you can defend |
 | 18 | Comms | Git log → release notes + raw notes → stakeholder updates |
 | | **Bonus: Judge the Models Yourself** | |
-| E1 | Build Your Own Eval (`lessons/13-build-your-own-eval.md`) | Five models on decisions you already made — pick with evidence |
-| E2 | Break Your Own Eval (`lessons/13e-break-your-own-eval.md`) | A wrong answer passes your answer key. You patch the key. |
+| E1 | Build and Break Your Own Eval (`lessons/13-build-your-own-eval.md`) | Five models on decisions you already made, then a wrong answer passes your answer key and you patch it |
 | | **Module 7: It Scales** | |
 | 19 | External Context | MCP server connected, new capabilities unlocked |
 | 20 | Personal OS | USER.md + SOUL.md → Claude knows you |

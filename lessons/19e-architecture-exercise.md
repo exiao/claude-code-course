@@ -2,6 +2,9 @@
 
 > **Magic Moment:** You see your project's architecture laid out as a clear diagram and understand which parts are simple and which will get complicated.
 
+
+> **Deep dive.** The fast path through this material is `24e-ship-it-exercise.md`, which reaches a reviewed pull request with a live preview in about ten minutes. Run this file when a student wants the architecture diagram slowly and in full.
+
 ---
 
 ## Instructions for Claude

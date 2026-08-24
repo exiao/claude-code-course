@@ -2,6 +2,9 @@
 
 > **Magic Moment:** You push your project to GitHub, make a change on a separate workspace (branch), open a proposal (pull request), and watch the full lifecycle play out. The jargon becomes muscle memory because you did it yourself.
 
+
+> **Deep dive.** The fast path through this material is `24e-ship-it-exercise.md`, which reaches a reviewed pull request with a live preview in about ten minutes. Run this file when a student wants the GitHub half slowly and in full.
+
 ---
 
 ## Instructions for Claude

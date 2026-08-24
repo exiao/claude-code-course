@@ -2,6 +2,9 @@
 
 > **Magic Moment:** You type a URL into your browser and your project loads. Not on your computer. On the internet. Anyone with the link can see it.
 
+
+> **Deep dive.** The fast path through this material is `24e-ship-it-exercise.md`, which reaches a reviewed pull request with a live preview in about ten minutes. Run this file when a student wants publishing slowly and in full.
+
 ---
 
 ## Instructions for Claude

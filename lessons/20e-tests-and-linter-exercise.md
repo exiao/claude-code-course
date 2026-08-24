@@ -2,6 +2,9 @@
 
 > **Magic Moment:** You add automatic quality checks to your project and watch them catch a real problem. Your project has a safety net.
 
+
+> **Deep dive.** The fast path through this material is `24e-ship-it-exercise.md`, which reaches a reviewed pull request with a live preview in about ten minutes. Run this file when a student wants tests and the linter slowly and in full.
+
 ---
 
 ## Instructions for Claude
