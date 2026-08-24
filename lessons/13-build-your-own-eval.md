@@ -53,14 +53,15 @@ Show them the three filenames and one line of what each task asks. Ask if you go
 
 > "Before I answer any of these, I am going to write down what a good answer has to contain. You correct me. That ordering is the whole trick."
 
-Draft two or three yes-or-no checks per task. Make them specific and answerable without judgment. Weak: "is it thoughtful?" Strong: "does it name the tracking failure before recommending any spend change?"
+Draft **one or two** yes-or-no checks per task. Not three, not five. A short key is easier to approve honestly, and a key with holes in it is the entire point of Part 2.
 
-Show them the checks for **one task first**, not all three. Example shape:
+Make each check specific and answerable without judgment. Weak: "is it thoughtful?" Strong: "does it name the tracking failure before recommending any spend change?"
+
+**Show one task's checks per message.** Never present all three tasks at once.
 
 > Task: should we have cut the export feature?
 > Check 1: does it notice only 3 percent of accounts used it?
 > Check 2: does it name the support cost, not just the usage?
-> Check 3: does it avoid recommending we rebuild it?
 
 Then use the AskUserQuestion tool:
 
@@ -69,7 +70,7 @@ Then use the AskUserQuestion tool:
 - **C)** You are missing a check
 - **D)** Too vague, make them sharper
 
-Apply their answer, then draft the other two tasks' checks and get one more approval pass. Save everything to `eval/answers.md`.
+Apply their answer, then do the same for task 2, then task 3. Three short rounds, not one long one. Save everything to `eval/answers.md`.
 
 > "This is your key now, not mine. You approved every check in it."
 
@@ -86,15 +87,17 @@ Answer each task properly, as if it were real work. Save the **full text** of ea
 Then score yourself against the key, check by check, and show it:
 
 ```
-9 checks, approved before I answered
+5 checks, approved before I answered
 
-task 01  ●●●○   3/4
-task 02  ●●●    3/3
-task 03  ●○     1/2
-                7/9
+task 01  ●●     2/2
+task 02  ●○     1/2
+task 03  ●      1/1
+                4/5
 ```
 
 For every check that failed, quote the line of your answer that failed it. For every check that passed, do not defend yourself.
+
+**Post the answers one task at a time**, each in its own message. Three answers in one message will get truncated mid-sentence and cost you a turn repasting it.
 
 Then use the AskUserQuestion tool:
 
